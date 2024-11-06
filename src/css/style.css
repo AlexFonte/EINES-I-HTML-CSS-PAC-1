@@ -1,11 +1,24 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+:root{
+
 }
 
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* REGLES LAYOUTS */
+
 body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
-    background-color: linear-gradient(to bottom, #bada55, #c0ffee);
+    position: relative;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
 }
