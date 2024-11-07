@@ -17,8 +17,28 @@ html {
 /* REGLES LAYOUTS */
 
 body {
-    position: relative;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
     margin: 0;
     text-align: center;
     line-height: 1.6;
+
 }
+
+header *, footer *{
+    margin:0;
+    padding:0;
+    list-style:none;
+    color: white;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+main{
+    background-color: mediumaquamarine;
+}
+
+footer{background-color: deepskyblue}
