@@ -1,13 +1,43 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
+<include src="common/head.html"></include>
+
 <body>
-<h1>Links</h1>
-<include src="common/header.html"></include>
+<header>
+    <div class="container">
+        <nav class="menu-flex">
+
+            <div class="logo">
+                <a class="logo-img" href="index.html"></a>
+            </div>
+
+            <div class="menu">
+                <input aria-hidden="true" type="checkbox" id="hamburger-toggle">
+                <label class="hamburger" for="hamburger-toggle">
+                    <span class="slice"></span>
+                    <span class="slice"></span>
+                    <span class="slice"></span>
+                </label>
+                <ul class="burger-menu">
+                    <li><a href="./index.html">Portada</a></li>
+                    <li><a href="./categoria.html">Categoria</a></li>
+                    <li class="burger-menu-active"><a href="./presentacio.html">Presentació</a></li>
+                    <li><a href="enllaços.html">Enllaços</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Content</h1>
+</main>
+<include src="common/footer.html"></include>
+
+
+<!-- Add Scripts -->
 <script type="module" src="js/app.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
-:root{
-
+:root {
+    --v-red: #ED1846;
+    --v-gold: #D6B76F;
 }
 
 *,
@@ -20,25 +21,140 @@ body {
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
-    margin: 0;
     text-align: center;
     line-height: 1.6;
+    max-width: 100%;
+    background: #fcfcfc;
+    font-size: 1.6rem;
+}
+
+header {
+    padding: 1rem 0rem;
+    background: #F9F9F9;
+}
+
+.container {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    font-size: 2.4rem;
+}
+
+
+.menu-flex .logo {
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+}
+
+.menu-flex a {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-img {
+    background-image: url("../img/logos/logo-gold.png");
+}
+
+.logo-img:hover {
+    background-image: url("../img/logos/logo-red.png");
+}
+
+.menu-flex ul {
+    list-style: none;
 
 }
 
-header *, footer *{
-    margin:0;
-    padding:0;
-    list-style:none;
+.menu-flex a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hamburger-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.burger-menu ul {
+    display: block;
+}
+
+.burger-menu li {
+    width: auto;
+    display: inline-flex;
+    margin: 0 1.5rem;
+    padding: 0 1rem;
+}
+
+.burger-menu a {
+    color: var(--v-gold);
+}
+
+.burger-menu-active,
+.burger-menu li:hover {
+    border-bottom: 3px solid var(--v-gold);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.burger-menu-active a,
+.burger-menu a:hover {
+    color: var(--v-red);
+}
+
+
+#view-viana {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/prova.jpeg);
+    background-size: cover;
+    background-position: top; /* Alinea la imagen en la parte inferior */
+    height: 80rem;
     color: white;
+    --opacidad-negro: 0.5;
 }
 
-header{
-    background-color: aquamarine;
+.container.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.slogan {
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-main{
-    background-color: mediumaquamarine;
+.btn-discover {
+    width: 25rem;
+    background-color: rgba(214, 183, 111, 0.85);
+    /*background-color: rgba(214, 183, 111, 0.8);*/
+    /*background-color: #D6B76FB3;*/
+    border-radius: 25rem;
+    padding: 0rem 1rem;
 }
 
-footer{background-color: deepskyblue}
+.btn-discover a {
+    color: white;
+    font-size: 2.5rem;
+}
