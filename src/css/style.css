@@ -34,20 +34,24 @@ body {
     text-align: center;
     line-height: 1.6;
     max-width: 100%;
-    background: #fcfcfc;
+    background: #FeFeFe;
     font-size: 1.6rem;
     font-family: var(--onest-sans-serif), sans-serif;
 }
 
 header {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
     background: #F5F5F5;
     position: sticky;
     top: 0;
 }
 
+main{
+    padding: 3rem;
+}
+
 footer {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
     background: #F5F5F5;
 }
 
@@ -219,7 +223,7 @@ nav .burger-menu {
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
 
 #view-viana {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/prova.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpeg);
     background-size: cover;
     background-position: top; /* Alinea la imagen en la parte inferior */
     height: 80rem;
@@ -252,7 +256,7 @@ nav .burger-menu {
     font-weight: 600;
 }
 
-
+.btn .btn-readme,
 .btn .btn-discover {
     color: white;
     background-color: rgba(214, 183, 111, 0.85);
@@ -261,9 +265,52 @@ nav .burger-menu {
     font-size: 1.8rem;
 }
 
+.btn .btn-readme:hover,
 .btn .btn-discover:hover {
     background-color: rgba(237, 24, 70, 0.85);
 }
 
+.section{
+    margin-top: 5rem;
+}
 
+.card{
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.card .image-card{
+    display: block;
+    width: 60rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.card h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.card p{
+    margin-bottom: 4rem;
+}
+
+.btn.btn-readme{
+    background-color: rgba(214, 183, 111, 1);
+
+}
+
+.btn .btn-readme:hover{
+    background-color: rgba(237, 24, 70, 0.85);
+
+}
 
