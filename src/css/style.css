@@ -4,6 +4,7 @@
     --v-red: #ED1846;
     --v-gold: #D6B76F;
     --onest-sans-serif: 'Onest';
+    --custom-gray: #f2f2f2;
 }
 
 .arizonia {
@@ -41,24 +42,28 @@ body {
 
 header {
     padding: 1rem 0;
-    background: #F5F5F5;
+    background: #F9F9F9;
     position: sticky;
     top: 0;
 }
 
-main{
-    padding-bottom: 3rem;
-}
+/*main {*/
+/*    padding-bottom: 3rem;*/
+/*}*/
 
 footer {
     padding: 1rem 0;
-    background: #F5F5F5;
+    background: #F9f9f9;
 }
 
 .container {
     max-width: 120rem;
     width: 80%;
     margin: 0 auto;
+}
+
+.container.last {
+    width: 30%
 }
 
 ul li {
@@ -214,10 +219,8 @@ nav .burger-menu {
     color: var(--v-red);
 }
 
-.legal{
+.legal {
 }
-
-
 
 
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
@@ -256,7 +259,7 @@ nav .burger-menu {
     font-weight: 600;
 }
 
-.btn .btn-readme,
+.btn .btn-button,
 .btn .btn-discover {
     color: white;
     background-color: rgba(214, 183, 111, 0.85);
@@ -265,18 +268,21 @@ nav .burger-menu {
     font-size: 1.8rem;
 }
 
-.btn .btn-readme:hover,
 .btn .btn-discover:hover {
     background-color: rgba(237, 24, 70, 0.85);
 }
 
-.section{
-    margin-top: 5rem;
+.section-1, section-2 {
+    padding: 3rem 0;
 }
 
-.card{
+.section-1 {
+    background-color: var(--custom-gray);
+}
+
+
+.card {
     padding: 2rem;
-    background-color: #f5f5f5;
     border-radius: 1.5rem;
     width: 100%;
     display: flex;
@@ -287,7 +293,11 @@ nav .burger-menu {
     gap: 2rem;
 }
 
-.card .image-card{
+.card.last {
+    height: 25rem;
+}
+
+.card .image-card {
     display: block;
     width: 60rem;
     height: auto;
@@ -295,21 +305,38 @@ nav .burger-menu {
     border-radius: 1.5rem;
 }
 
-.card h2{
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    place-items: center;
+    justify-content: space-around;
+}
+
+.card .links {
+    justify-content: space-evenly;
+}
+
+
+.card h2 {
     font-size: 4rem;
+    /*
     margin-bottom: 2rem;
+    */
 }
 
-.card p{
-    margin-bottom: 4rem;
+.card p {
+    font-size: 1.6rem;
 }
 
-.btn.btn-readme{
+
+
+.btn.btn-button {
     background-color: rgba(214, 183, 111, 1);
 
 }
 
-.btn .btn-readme:hover{
+.btn .btn-button:hover {
     background-color: rgba(237, 24, 70, 0.85);
 
 }
