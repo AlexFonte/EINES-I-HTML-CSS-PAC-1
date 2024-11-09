@@ -1,7 +1,17 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
 :root {
     --v-red: #ED1846;
     --v-gold: #D6B76F;
+    --onest-sans-serif: 'Onest';
 }
+
+.arizonia {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 *,
 *:before,
@@ -26,22 +36,37 @@ body {
     max-width: 100%;
     background: #fcfcfc;
     font-size: 1.6rem;
+    font-family: var(--onest-sans-serif), sans-serif;
 }
 
 header {
     padding: 1rem 0rem;
-    background: #F9F9F9;
+    background: #F5F5F5;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    padding: 1rem 0rem;
+    background: #F5F5F5;
 }
 
 .container {
-    max-width: 100%;
+    max-width: 120rem;
     width: 80%;
     margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
+
+/* ##################################### CSS MENU ################################### */
+/*TODO RESPONSIVE*/
 
 .menu-flex {
     display: flex;
@@ -95,36 +120,106 @@ a {
     display: none;
 }
 
-.burger-menu ul {
-    display: block;
+nav .burger-menu {
+    display: flex;
+    float: right;
+    /*height: 5rem;*/
 }
 
 .burger-menu li {
     width: auto;
-    display: inline-flex;
-    margin: 0 1.5rem;
-    padding: 0 1rem;
+    display: inline-block;
+    margin: 0 2.5rem;
+}
+
+.burger-menu li:last-child {
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .burger-menu a {
+    font-weight: bold;
     color: var(--v-gold);
 }
 
-.burger-menu-active,
-.burger-menu li:hover {
-    border-bottom: 3px solid var(--v-gold);
+.burger-menu li:hover:not(.burger-menu-active) {
+    border-bottom: 3px solid var(--v-red);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.burger-menu-active a,
-.burger-menu a:hover {
+
+.burger-menu-active {
+    border-bottom: 3px solid var(--v-gold);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.burger-menu-active a {
     color: var(--v-red);
 }
 
 
+/* ##################################### CSS FOOTER ################################### */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    align-content: center;
+    font-size: 1.3rem;
+    color: var(--v-gold);
+}
+
+.logo-img {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-size: contain; /* Ajusta la imagen al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+.footer-logo-autor,
+.follow,
+.legal {
+    display: grid;
+    row-gap: 0.5rem;
+    justify-items: center;
+
+
+}
+
+.follow {
+    row-gap: 2rem;
+
+}
+
+.follow ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.follow a, .legal a {
+    color: var(--v-gold);
+}
+
+.follow a:hover, .legal a:hover {
+    color: var(--v-red);
+}
+
+.legal{
+}
+
+
+
+
+/* ##################################### CSS IMAGEN PRINCIPAL ################################### */
+
 #view-viana {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/prova.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/prova.jpeg);
     background-size: cover;
     background-position: top; /* Alinea la imagen en la parte inferior */
     height: 80rem;
@@ -132,29 +227,43 @@ a {
     --opacidad-negro: 0.5;
 }
 
-.container.flex{
-    display: flex;
+#view-viana .flex {
+    /*gap: 3rem;*/
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    height: 75rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+
 .slogan {
-    padding-top: 5rem;
+    padding-top: 1rem;
+}
+
+.slogan h1 {
+    font-size: 9rem;
+}
+
+.slogan p {
+    margin-top: 3rem;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.btn-discover {
-    width: 25rem;
-    background-color: rgba(214, 183, 111, 0.85);
-    /*background-color: rgba(214, 183, 111, 0.8);*/
-    /*background-color: #D6B76FB3;*/
-    border-radius: 25rem;
-    padding: 0rem 1rem;
-}
 
-.btn-discover a {
+.btn .btn-discover {
     color: white;
-    font-size: 2.5rem;
+    background-color: rgba(214, 183, 111, 0.85);
+    border-radius: 25rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
 }
+
+.btn .btn-discover:hover {
+    background-color: rgba(237, 24, 70, 0.85);
+}
+
+
+
