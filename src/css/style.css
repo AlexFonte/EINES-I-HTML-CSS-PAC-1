@@ -13,6 +13,10 @@
     font-style: normal;
 }
 
+.gold{
+    color: var(--v-gold);
+}
+
 
 *,
 *:before,
@@ -80,7 +84,7 @@ a {
 /* ##################################### CSS MENU ################################### */
 /*TODO RESPONSIVE*/
 
-.menu-flex {
+.header-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,21 +96,28 @@ a {
 }
 
 
-.menu-flex .logo {
-    display: flex;
+.logo {
+    display: block;
     width: 11rem;
     height: 11rem;
+    float: left;
 }
 
-.menu-flex a {
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.hamburger-icon {
+    display: none;
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
 }
 
 .logo-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain; /* Ajusta la imagen al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
     background-image: url("../img/logos/logo-gold.png");
 }
 
@@ -114,62 +125,61 @@ a {
     background-image: url("../img/logos/logo-red.png");
 }
 
-.menu-flex ul {
-    list-style: none;
-
-}
-
-.menu-flex a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#hamburger-toggle {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-}
-
-nav .burger-menu {
-    display: flex;
+menu {
+    width: 60%;
+    height: 100%;
     float: right;
-    /*height: 5rem;*/
 }
 
-.burger-menu li {
-    width: auto;
+
+.menu, .burger {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.burger {
+    float: right;
+    font-size: 2.4rem;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+}
+
+.burger li {
     display: inline-block;
-    margin: 0 2.5rem;
+    margin: 0;
 }
 
-.burger-menu li:last-child {
-    margin-right: 0;
-    padding-right: 0;
-}
-
-.burger-menu a {
-    font-weight: bold;
-    color: var(--v-gold);
-}
-
-.burger-menu li:hover:not(.burger-menu-active) {
+.burger li a:hover:not(.burger-menu-active a) {
     border-bottom: 3px solid var(--v-red);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-
-.burger-menu-active {
+.burger-menu-active a {
     border-bottom: 3px solid var(--v-gold);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
 }
 
+nav a {
+    font-weight: bold;
+    color: var(--v-gold);
+}
+
 .burger-menu-active a {
     color: var(--v-red);
+}
+
+.fa-x{
+    display:none;
 }
 
 
@@ -186,23 +196,12 @@ nav .burger-menu {
     flex-wrap: wrap;
 }
 
-.logo-img {
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    background-size: contain; /* Ajusta la imagen al contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el contenedor */
-}
-
 .footer-logo-autor,
 .follow,
 .legal {
     display: grid;
     row-gap: 0.5rem;
     justify-items: center;
-
-
 }
 
 .follow {
@@ -230,7 +229,7 @@ nav .burger-menu {
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
 
 #view-viana {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Alinea la imagen en la parte inferior */
@@ -307,7 +306,7 @@ nav .burger-menu {
 .card .image-card {
     display: block;
     width: 60rem;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
     /*width: 100%;*/
@@ -320,6 +319,11 @@ nav .burger-menu {
     align-self: stretch;
     place-items: center;
     justify-content: space-between;
+
+}
+
+.card{
+    align-items: center;
 }
 
 .card h2 {
@@ -346,7 +350,9 @@ nav .burger-menu {
 
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
-
+    header {
+        display: block;
+    }
 
     .container {
         max-width: 100%;
@@ -354,21 +360,59 @@ nav .burger-menu {
 
     }
 
-
-    .menu-flex,
     .card,
     .footer {
         flex-direction: column;
         height: 100%;
     }
 
-    .menu {
-        display: none;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .burger-menu li {
-        margin: 0 0.5rem; /* Reducir margen en pantallas pequeñas */
+    .hamburger-icon {
+        display: block;
     }
+
+    nav{
+        width: 100%;
+    }
+
+    nav .burger {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s ease-out;
+    }
+
+    /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
+        margin-top: 1rem;
+        height:auto;
+        max-height: 30rem;
+        transition: all 0.5s ease-in;
+    }
+
+    /* Hiding the bars icon on checkbox checked state */
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display:none;
+    }
+
+    /* Showing the cross icon on checkbox checked state */
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display:inline-flex;
+    }
+
 
     #view-viana {
         height: 50rem; /* Ajusta la altura para pantallas más pequeñas */
@@ -378,8 +422,16 @@ nav .burger-menu {
         font-size: 6rem; /* Reducir tamaño de fuente en pantallas pequeñas */
     }
 
+    #view-viana .slogan p {
+        font-size: 2rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+
+    .legal {
+        margin-top: 1rem;
+    }
+
     .card .content {
-        row-gap: 2rem;
+        gap: 2rem;
     }
 }
 
@@ -391,18 +443,73 @@ nav .burger-menu {
 
     }
 
-    .menu-flex,
     .card,
     .footer {
         flex-direction: column;
     }
 
-    .menu {
-        display: none;
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav .burger {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s ease-out;
+    }
+
+    /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
+        margin-top: 1rem;
+        height:auto;
+        max-height: 30rem;
+        transition: all 0.5s ease-in;
+    }
+
+    /* Hiding the bars icon on checkbox checked state */
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display:none;
+    }
+
+    /* Showing the cross icon on checkbox checked state */
+    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display:inline-flex;
+    }
+
+    .legal {
+        margin-top: 1rem;
     }
 
     .card .content {
-        row-gap: 2rem;
+        gap: 2rem;
+    }
+
+
+
+    #view-viana .slogan h1 {
+        font-size: 6rem;
+    }
+
+    #view-viana .slogan p {
+        font-size: 2rem;
     }
 }
 
@@ -422,6 +529,18 @@ nav .burger-menu {
         flex-direction: row;
         height: 100%;
     }
+
+    .card .content {
+        gap: 2rem;
+    }
+
+    #view-viana .slogan h1 {
+        font-size: 7rem;
+    }
+
+    #view-viana .slogan p {
+        font-size: 3rem;
+    }
 }
 
 
@@ -440,5 +559,16 @@ nav .burger-menu {
         height: 100%;
     }
 
+    .card .content {
+        gap: 1rem;
+    }
+
+    #view-viana .slogan h1 {
+        font-size: 9rem;
+    }
+
+    #view-viana .slogan p {
+        font-size: 3rem;
+    }
 
 }
