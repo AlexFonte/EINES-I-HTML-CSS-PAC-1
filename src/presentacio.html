@@ -5,28 +5,26 @@
 <body>
 <header>
     <div class="container">
-        <nav class="menu-flex">
-
+        <div class="menu">
             <div class="logo">
                 <a class="logo-img" href="index.html"></a>
+                <div class="hamburger-icon">
+                    <label for="dropdown">
+                        <i class="fas fa-bars fa-lg gold"></i>
+                        <i class="fas fa-x fa-lg gold"></i>
+                    </label>
+                    <input type="checkbox" id="dropdown"/>
+                </div>
             </div>
-
-            <div class="menu">
-                <input aria-hidden="true" type="checkbox" id="hamburger-toggle">
-                <label class="hamburger" for="hamburger-toggle">
-                    <span class="slice"></span>
-                    <span class="slice"></span>
-                    <span class="slice"></span>
-                </label>
-                <ul class="burger-menu">
-                    <li><a href="index.html">Portada</a></li>
+            <nav>
+                <ul class="burger">
+                    <li class="burger-menu-active"><a href="./index.html">Portada</a></li>
                     <li><a href="categoria.html">Categoria</a></li>
-                    <li class="burger-menu-active"><a href="./presentacio.html">Presentació</a></li>
+                    <li><a href="presentacio.html">Presentació</a></li>
                     <li><a href="enllaços.html">Enllaços</a></li>
                 </ul>
-            </div>
-
-        </nav>
+            </nav>
+        </div>
     </div>
 </header>
 
