@@ -426,7 +426,7 @@ nav a {
 
     .container {
         max-width: 100%;
-        width: 95%;
+        width: 90%;
 
     }
 
@@ -494,7 +494,7 @@ nav a {
     }
 
     #view-viana .slogan h1 {
-        font-size: 5.5rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+        font-size: 5.45rem; /* Reducir tamaño de fuente en pantallas pequeñas */
     }
 
     #view-viana .slogan p {
