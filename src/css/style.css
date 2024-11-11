@@ -291,7 +291,7 @@ nav a {
     background-color: rgba(237, 24, 70, 0.85);
 }
 
-.section-1, section-2 {
+.section-1, .section-2 {
     padding: 3rem 0;
 }
 
@@ -448,7 +448,15 @@ nav a {
     }
 
     .card .content {
-        gap: 2rem;
+        gap: 3rem;
+    }
+
+    .section-1, .section-2{
+        padding: 0 0 1rem;
+    }
+
+    .card.last {
+        height: auto;
     }
 }
 
@@ -519,6 +527,10 @@ nav a {
         gap: 2rem;
     }
 
+    .card.last {
+        height: auto;
+    }
+
     #view-viana .flex {
         gap: 11rem;
     }
@@ -530,6 +542,10 @@ nav a {
 
     #view-viana .slogan p {
         font-size: 2rem;
+    }
+
+    .section-1, .section-2{
+        padding: 0 0 1rem;
     }
 }
 
