@@ -678,4 +678,8 @@ nav a {
         font-size: 3rem;
     }
 
+    .content-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
