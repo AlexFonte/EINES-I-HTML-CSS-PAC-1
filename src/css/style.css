@@ -270,6 +270,10 @@ nav a {
 .slogan h1 {
     font-size: 9rem;
 }
+.category h1{
+    font-size: 4rem;
+    color: var(--v-gold);
+}
 
 .slogan p {
     margin: 3rem 0;
@@ -369,8 +373,17 @@ nav a {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     align-content: center;
+    justify-content: space-around;
+}
+
+.content-section{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 .content-box {
@@ -404,6 +417,7 @@ nav a {
     padding: 1rem 0;
 
 }
+
 .card-category:hover {
     border: 1px solid var(--v-red);
     box-shadow: var(--box-sadow);
@@ -412,6 +426,7 @@ nav a {
 .card-category:hover a {
     color: var(--v-red);
 }
+
 /*
 .card-category:hover .img-card {
     transform: var(--zoom-in);
@@ -442,7 +457,7 @@ nav a {
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        justify-items: stretch;
     }
 
     .logo-img {
@@ -540,7 +555,7 @@ nav a {
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        justify-items: stretch;
     }
 
     .hamburger-icon {
@@ -602,6 +617,11 @@ nav a {
         font-size: 6rem;
     }
 
+    .category h1 {
+        font-size: 4.5rem;
+    }
+
+
     #view-viana .slogan p {
         font-size: 2rem;
     }
@@ -609,6 +629,7 @@ nav a {
     .section-1, .section-2 {
         padding: 0 0 1rem;
     }
+
     .content-box {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -642,6 +663,11 @@ nav a {
         font-size: 7rem;
     }
 
+    .category h1 {
+        font-size: 6rem;
+    }
+
+
     #view-viana .slogan p {
         font-size: 3rem;
     }
@@ -670,9 +696,15 @@ nav a {
         gap: 1rem;
     }
 
+
     #view-viana .slogan h1 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
+
+    .category h1 {
+        font-size: 6rem;
+    }
+
 
     #view-viana .slogan p {
         font-size: 3rem;
