@@ -5,6 +5,7 @@
     --v-gold: #D6B76F;
     --onest-sans-serif: 'Onest';
     --custom-gray: #f2f2f2;
+    --custom-white: #fefefe;
     --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
     --zoom-in: scale(1.1);
 }
@@ -41,7 +42,7 @@ body {
     text-align: center;
     line-height: 1.6;
     max-width: 100%;
-    background: #FeFeFe;
+    background: var(--custom-white);
     font-size: 1.6rem;
     font-family: var(--onest-sans-serif), sans-serif;
 }
@@ -65,11 +66,22 @@ footer {
     background: #F9f9f9;
 }
 
+.container-section,
 .container {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
 }
+
+.container-section{
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
 
 .container.last {
     width: 100%;
@@ -159,12 +171,14 @@ menu {
     margin: 0;
 }
 
+.container-section:hover h2,
 .burger li a:hover:not(.burger-menu-active a) {
     border-bottom: 3px solid var(--v-red);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+.container-section h2,
 .burger-menu-active a {
     border-bottom: 3px solid var(--v-gold);
     border-bottom-left-radius: 5px;
@@ -242,6 +256,16 @@ nav a {
     color: white;
 }
 
+#view-viana-category {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana-area-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Alinea la imagen en la parte inferior */
+    width: 100%;
+    max-width: 100%;
+    color: white;
+}
+
 #view-viana .flex {
     /*gap: 3rem;*/
     /*    flex-direction: column;
@@ -272,7 +296,7 @@ nav a {
 }
 .category h1{
     font-size: 4rem;
-    color: var(--v-gold);
+    /*color: var(--v-gold);*/
 }
 
 .slogan p {
@@ -301,7 +325,7 @@ nav a {
 .section-1, .section-2 {
     padding: 3rem 0;
 }
-
+.even,
 .section-1 {
     background-color: var(--custom-gray);
 }
@@ -377,13 +401,20 @@ nav a {
     justify-content: space-around;
 }
 
-.content-section{
+.content-section {
     gap: 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: stretch;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.content-section h2{
+    width: auto;
+    font-size: 2rem;
 }
 
 .content-box {
@@ -395,8 +426,8 @@ nav a {
 .card-category {
     overflow: hidden; /* Evita que la imagen se salga del contenedor */
     border-radius: 10px;
-    border: 1px solid var(--v-gold);
-    background-color: var(--custom-gray);
+    border: 2px solid var(--v-gold);
+    background-color: var(--custom-white);
 }
 
 .card-category .img-card {
@@ -404,7 +435,7 @@ nav a {
     height: auto;
     object-fit: cover;
     aspect-ratio: 600/400;
-    border-radius: 10px 10px 0 0;
+    /*border-radius: 10px 10px 0 0;*/
 }
 
 .card-category a {
@@ -438,7 +469,7 @@ nav a {
     header {
         /*padding: 0;*/
     }
-
+    .container-section,
     .container {
         max-width: 100%;
         width: 90%;
@@ -539,6 +570,7 @@ nav a {
 
 @media (601px <= width < 992px) {
 
+    .container-section,
     .container {
         max-width: 100%;
         width: 95%;
@@ -621,6 +653,9 @@ nav a {
         font-size: 4.5rem;
     }
 
+    .content-section h2{
+        font-size: 2.5rem;
+    }
 
     #view-viana .slogan p {
         font-size: 2rem;
@@ -636,6 +671,7 @@ nav a {
 }
 
 @media (min-width: 992px) {
+    .container-section,
     .container {
         width: 80%;
 
@@ -667,6 +703,10 @@ nav a {
         font-size: 6rem;
     }
 
+    .content-section h2{
+        font-size: 3rem;
+    }
+
 
     #view-viana .slogan p {
         font-size: 3rem;
@@ -678,6 +718,7 @@ nav a {
 }
 
 @media (min-width: 1200px) {
+    .container-section,
     .container {
         width: 70%;
     }
@@ -703,6 +744,10 @@ nav a {
 
     .category h1 {
         font-size: 6rem;
+    }
+
+    .content-section h2{
+        font-size: 3rem;
     }
 
 
