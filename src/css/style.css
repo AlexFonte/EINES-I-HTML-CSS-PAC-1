@@ -5,6 +5,8 @@
     --v-gold: #D6B76F;
     --onest-sans-serif: 'Onest';
     --custom-gray: #f2f2f2;
+    --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
+    --zoom-in: scale(1.1);
 }
 
 .arizonia {
@@ -51,6 +53,7 @@ header {
     background: #F9F9F9;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 /*main {*/
@@ -361,15 +364,69 @@ nav a {
 
 }
 
+.category {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.card-category {
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+    border-radius: 10px;
+    border: 1px solid var(--v-gold);
+    background-color: var(--custom-gray);
+}
+
+.card-category .img-card {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 600/400;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-category a {
+    color: var(--v-gold);
+}
+
+.card-category figcaption {
+    width: 95%;
+    margin: auto;
+    padding: 1rem 0;
+
+}
+.card-category:hover {
+    border: 1px solid var(--v-red);
+    box-shadow: var(--box-sadow);
+}
+
+.card-category:hover a {
+    color: var(--v-red);
+}
+/*
+.card-category:hover .img-card {
+    transform: var(--zoom-in);
+    transition: transform 0.3s ease-in-out;
+}*/
+
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
     header {
-       /*padding: 0;*/
+        /*padding: 0;*/
     }
 
     .container {
         max-width: 100%;
-        width: 100%;
+        width: 95%;
 
     }
 
@@ -387,7 +444,8 @@ nav a {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    .logo-img{
+
+    .logo-img {
         width: 80%;
         height: 80%;
     }
@@ -436,7 +494,7 @@ nav a {
     }
 
     #view-viana .slogan h1 {
-        font-size: 6rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+        font-size: 5.5rem; /* Reducir tamaño de fuente en pantallas pequeñas */
     }
 
     #view-viana .slogan p {
@@ -451,12 +509,16 @@ nav a {
         gap: 3rem;
     }
 
-    .section-1, .section-2{
+    .section-1, .section-2 {
         padding: 0 0 1rem;
     }
 
     .card.last {
         height: auto;
+    }
+
+    .content-box {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -464,7 +526,7 @@ nav a {
 
     .container {
         max-width: 100%;
-        width: 100%;
+        width: 95%;
 
     }
 
@@ -544,11 +606,13 @@ nav a {
         font-size: 2rem;
     }
 
-    .section-1, .section-2{
+    .section-1, .section-2 {
         padding: 0 0 1rem;
     }
+    .content-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
 
 @media (min-width: 992px) {
     .container {
@@ -581,8 +645,11 @@ nav a {
     #view-viana .slogan p {
         font-size: 3rem;
     }
-}
 
+    .content-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (min-width: 1200px) {
     .container {
