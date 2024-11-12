@@ -267,10 +267,10 @@ nav a {
 }
 
 #view-viana-category-detail {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/santa-luzia-5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 60%; /* Alinea la imagen en la parte inferior */
+    background-position: center 85%; /* Alinea la imagen en la parte inferior */
     width: 100%;
     max-width: 100%;
     color: white;
