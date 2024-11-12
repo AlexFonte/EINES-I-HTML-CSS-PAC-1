@@ -534,7 +534,6 @@ nav a {
 }
 
 .info.list {
-    width: 100%;
     text-align: left;
 }
 
@@ -674,6 +673,10 @@ nav a {
     .article-detail-tree .info {
         width: 100%;
     }
+
+    .article-detail-two.flex-col-reverse{
+        flex-direction: column-reverse;
+    }
 }
 
 @media (601px <= width < 992px) {
@@ -788,6 +791,10 @@ nav a {
     .article-detail-tree .img-card,
     .article-detail-tree .info {
         width: 100%;
+    }
+
+    .article-detail-two.flex-col-reverse{
+        flex-direction: column-reverse;
     }
 }
 
