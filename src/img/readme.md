@@ -38,3 +38,4 @@ colors: red: `#ED1846`, gold: `#D6B76F`
 info: santa luzia: https://www.visitportugal.com/es/content/basilica-de-santa-luzia
 https://eltrapezio.eu/es/portugues/basilica-de-santa-luzia-a-joia-da-coroa-de-viana-do-castelo_29965.html
 https://fronteiraesquecida.eu/fichas/santuario-del-sagrado-corazon-de-jesus-en-santa-luzia-2/
+https://www.farodevigo.es/visado/portugal/2023/10/06/turismo-portugal-mirador-santa-lucia-viana-castelo-92902746.html

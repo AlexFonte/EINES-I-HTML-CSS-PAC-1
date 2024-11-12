@@ -533,6 +533,27 @@ nav a {
     gap: 1rem;
 }
 
+.info.list {
+    width: 100%;
+    text-align: left;
+}
+
+.info.list ul {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.info.list li::marker {
+    color: var(--v-gold);
+}
+
+.info.list li {
+    list-style: disc outside;
+    padding-left: 0.5rem;
+}
+
 .content-box-detail .img-card:hover {
     box-shadow: var(--box-sadow);
 }
@@ -650,7 +671,7 @@ nav a {
     .article-detail-two .img-card,
     .article-detail-two .info,
     .article-detail-tree .img-card,
-    .article-detail-tree .info{
+    .article-detail-tree .info {
         width: 100%;
     }
 }
@@ -765,7 +786,7 @@ nav a {
     .article-detail-two .img-card,
     .article-detail-two .info,
     .article-detail-tree .img-card,
-    .article-detail-tree .info{
+    .article-detail-tree .info {
         width: 100%;
     }
 }
