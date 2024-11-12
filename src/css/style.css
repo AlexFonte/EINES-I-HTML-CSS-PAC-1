@@ -539,8 +539,8 @@ nav a {
 }
 
 .info.list ul {
+    margin-top: 1rem;
     margin-left: 2.5rem;
-    margin-top: 2rem;
     border-radius: 5px;
     font-size: 1.5rem;
 }
