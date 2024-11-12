@@ -75,7 +75,7 @@ footer {
 
 .container-section {
     display: grid;
-    gap: 2rem;
+    gap: 4rem;
     grid-template-rows: auto 1fr;
     align-items: center;
     justify-items: center;
@@ -267,10 +267,11 @@ nav a {
 }
 
 #view-viana-category-detail {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../img/santa-luzia-10.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 85%; /* Alinea la imagen en la parte inferior */
+    background-position: center; /* Alinea la imagen en la parte inferior */
     width: 100%;
     max-width: 100%;
     color: white;
@@ -476,6 +477,65 @@ nav a {
     transition: transform 0.3s ease-in-out;
 }*/
 
+.content-box-detail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+.content-box-detail article {
+    max-width: 100%;
+    width: 90%;
+}
+
+/*:not(:first-child)*/
+.content-box-detail article {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.content-box-detail .img-card {
+    border-radius: 10px;
+}
+
+.article-detail-two .img-card,
+.article-detail-two .info {
+    max-width: 100%;
+    width: 46%;
+    height: auto;
+}
+
+.content-box-detail .article-detail-tree {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.article-detail-tree .img-card,
+.article-detail-tree .info {
+    max-width: 100%;
+    width: 31%;
+    height: auto;
+}
+
+.info.p-two {
+    display: grid;
+    gap: 1rem;
+}
+
+.content-box-detail .img-card:hover {
+    box-shadow: var(--box-sadow);
+}
+
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
     header {
@@ -579,6 +639,19 @@ nav a {
     .content-box {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .content-box-detail article {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .article-detail-two .img-card,
+    .article-detail-two .info,
+    .article-detail-tree .img-card,
+    .article-detail-tree .info{
+        width: 100%;
+    }
 }
 
 @media (601px <= width < 992px) {
@@ -680,6 +753,19 @@ nav a {
 
     .content-box {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-box-detail article {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .article-detail-two .img-card,
+    .article-detail-two .info,
+    .article-detail-tree .img-card,
+    .article-detail-tree .info{
+        width: 100%;
     }
 }
 

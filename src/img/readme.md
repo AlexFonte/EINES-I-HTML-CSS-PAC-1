@@ -26,4 +26,4 @@ ___
 > Falta ajustar imagenes
 
 
-colors: red: `#ED1846`, gold: `#D6B76F`
+colors: red: `#ED1846`, gold: `#D6B    76F`
