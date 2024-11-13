@@ -65,6 +65,10 @@ footer {
     padding: 1rem 0;
     background: #F9f9f9;
 }
+q{
+    quotes: "“" "”" "‘" "’";
+}
+
 
 .container-section,
 .container {
@@ -587,6 +591,7 @@ nav a {
     display: grid;
     gap: 3rem;
 }
+
 
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
