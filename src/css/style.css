@@ -583,6 +583,11 @@ nav a {
     height: 30%;
 }
 
+.info.paragraph{
+    display: grid;
+    gap: 3rem;
+}
+
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
     header {
