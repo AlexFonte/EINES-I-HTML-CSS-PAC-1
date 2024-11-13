@@ -175,6 +175,7 @@ menu {
     margin: 0;
 }
 
+.content-section-presentation:hover h2,
 .container-section:hover h2,
 .burger li a:hover:not(.burger-menu-active a) {
     border-bottom: 3px solid var(--v-red);
@@ -182,6 +183,7 @@ menu {
     border-bottom-right-radius: 5px;
 }
 
+.content-section-presentation h2,
 .container-section h2,
 .burger-menu-active a {
     border-bottom: 3px solid var(--v-gold);
@@ -601,7 +603,6 @@ nav a {
 
 .presentation .img-card.img-vertical{
     width: 20%;
-    height: 30%;
 }
 
 .info.paragraph{
@@ -735,6 +736,10 @@ nav a {
         flex-direction: column-reverse;
     }
 
+    .presentation .img-card.img-vertical{
+        width: 90%;
+    }
+
     .presentation .video{
        max-width: 100%;
         width: 90%;
@@ -748,7 +753,6 @@ nav a {
     .container {
         max-width: 100%;
         width: 95%;
-
     }
 
     .card,
@@ -863,6 +867,10 @@ nav a {
     .presentation .video{
         max-width: 100%;
         width: 100%
+    }
+
+    .presentation .img-card.img-vertical{
+        width: 70%;
     }
 }
 
