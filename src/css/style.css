@@ -64,7 +64,8 @@ footer {
     padding: 1rem 0;
     background: #F9f9f9;
 }
-q{
+
+q {
     quotes: "“" "”" "‘" "’";
 }
 
@@ -249,8 +250,25 @@ nav a {
 
 
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
+.background-viana-hello-popup {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/festas-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Alinea la imagen en la parte inferior */
+    color: white;
+    width: 50%;
+    min-height: 20rem;
+    align-content: space-around;
+    font-family: var(--onest-sans-serif), sans-serif;
+    font-size: 1.8rem;
+}
 
-#view-viana, .background-viana {
+.background-viana-hello .swal-title {
+    color: white;
+
+}
+
+#view-viana {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,15 +276,6 @@ nav a {
     width: 100%;
     max-width: 100%;
     min-height: 65rem;
-    color: white;
-}
-
-.background-viana {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/viana-av.jpg);
-    width: 30%;
-    min-height: 20rem;
-}
-.background-viana .swal-title{
     color: white;
 }
 
@@ -303,16 +312,6 @@ nav a {
 }
 
 #view-viana .flex {
-    /*gap: 3rem;*/
-    /*    flex-direction: column;
-        align-items: center;
-        height: 100%;
-        max-height: 90%;
-        display: flex;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 5rem;*/
     gap: 5rem;
     height: 100%;
     max-height: 100%;
@@ -346,15 +345,21 @@ nav a {
     margin: 3rem 0;
 }
 
+.background-viana-hello-btn,
 .btn .btn-button,
 .btn .btn-discover {
     color: white;
     background-color: rgba(214, 183, 111, 0.85);
     border-radius: 25rem;
     padding: 1rem 2.5rem;
-    font-size: 1.8rem;
+   font-size: 1.8rem;
 }
 
+.background-viana-hello-btn{
+    font-size: 1.5rem;
+}
+
+.background-viana-hello-btn:hover,
 .btn .btn-discover:hover {
     background-color: rgba(237, 24, 70, 0.85);
 }
@@ -582,34 +587,35 @@ nav a {
     box-shadow: var(--box-sadow);
 }
 
-.presentation{
+.presentation {
     gap: 0;
     padding: 2rem 0;
     display: block;
 }
 
-.presentation .info{
+.presentation .info {
     font-size: 1.8rem;
 }
 
-.presentation .info h3{
+.presentation .info h3 {
     font-size: 3rem;
 }
 
-.presentation .content-box-detail article{
+.presentation .content-box-detail article {
     justify-content: center;
     gap: 4rem;
 }
 
-.presentation .img-card.img-vertical{
+.presentation .img-card.img-vertical {
     width: 20%;
 }
 
-.info.paragraph{
+.info.paragraph {
     display: grid;
     gap: 3rem;
 }
-.presentation .video{
+
+.presentation .video {
     border-radius: 10px;
     border: 0;
     aspect-ratio: 16/9;
@@ -618,7 +624,8 @@ nav a {
 .swal-button {
 
 }
-.content-box-detail article.nav-web{
+
+.content-box-detail article.nav-web {
     width: 80%;
     text-align: justify-all;
     background-color: white;
@@ -698,6 +705,9 @@ nav a {
         display: inline-flex;
     }
 
+    .background-viana-hello-popup{
+        width: 100%;
+    }
 
     #view-viana {
         height: 50rem; /* Ajusta la altura para pantallas más pequeñas */
@@ -744,21 +754,21 @@ nav a {
         width: 100%;
     }
 
-    .article-detail-two.flex-col-reverse{
+    .article-detail-two.flex-col-reverse {
         flex-direction: column-reverse;
     }
 
-    .presentation .img-card.img-vertical{
+    .presentation .img-card.img-vertical {
         width: 90%;
     }
 
-    .presentation .video{
-       max-width: 100%;
+    .presentation .video {
+        max-width: 100%;
         width: 90%;
         height: auto;
     }
 
-    .content-box-detail article.nav-web{
+    .content-box-detail article.nav-web {
         width: 95%;
     }
 }
@@ -834,10 +844,13 @@ nav a {
         height: auto;
     }
 
+    .background-viana-hello-popup{
+        width: 100%;
+    }
+
     #view-viana .flex {
         gap: 11rem;
     }
-
 
     #view-viana .slogan h1 {
         font-size: 6rem;
@@ -876,20 +889,20 @@ nav a {
         width: 100%;
     }
 
-    .article-detail-two.flex-col-reverse{
+    .article-detail-two.flex-col-reverse {
         flex-direction: column-reverse;
     }
 
-    .presentation .video{
+    .presentation .video {
         max-width: 100%;
         width: 100%
     }
 
-    .presentation .img-card.img-vertical{
+    .presentation .img-card.img-vertical {
         width: 70%;
     }
 
-    .content-box-detail article.nav-web{
+    .content-box-detail article.nav-web {
         width: 100%;
 
     }
