@@ -487,6 +487,7 @@ nav a {
 
 }
 
+.content-box-detail article.nav-web:hover,
 .card-category:hover {
     border: 1px solid var(--v-red);
     box-shadow: var(--box-sadow);
@@ -613,7 +614,14 @@ nav a {
 .swal-button {
 
 }
-
+.content-box-detail article.nav-web{
+    width: 80%;
+    text-align: justify-all;
+    background-color: white;
+    border: 1px solid var(--v-gold);
+    border-radius: 10px;
+    padding: 3rem;
+}
 
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
@@ -745,6 +753,10 @@ nav a {
         width: 90%;
         height: auto;
     }
+
+    .content-box-detail article.nav-web{
+        width: 95%;
+    }
 }
 
 @media (601px <= width < 992px) {
@@ -872,6 +884,12 @@ nav a {
     .presentation .img-card.img-vertical{
         width: 70%;
     }
+
+    .content-box-detail article.nav-web{
+        width: 100%;
+
+    }
+
 }
 
 @media (min-width: 992px) {
