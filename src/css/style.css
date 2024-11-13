@@ -249,7 +249,7 @@ nav a {
 
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
 
-#view-viana {
+#view-viana, .background-viana {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,6 +257,15 @@ nav a {
     width: 100%;
     max-width: 100%;
     min-height: 65rem;
+    color: white;
+}
+
+.background-viana {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/viana-av.jpg);
+    width: 30%;
+    min-height: 20rem;
+}
+.background-viana .swal-title{
     color: white;
 }
 
@@ -281,7 +290,7 @@ nav a {
     color: white;
 }
 
-#view-viana-category-detail {
+#view-viana-presentacio {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../img/viana-av.jpg);
     background-size: cover;
@@ -577,6 +586,14 @@ nav a {
     display: block;
 }
 
+.presentation .info{
+    font-size: 1.8rem;
+}
+
+.presentation .info h3{
+    font-size: 3rem;
+}
+
 .presentation .content-box-detail article{
     justify-content: center;
     gap: 4rem;
@@ -590,6 +607,10 @@ nav a {
 .info.paragraph{
     display: grid;
     gap: 3rem;
+}
+
+.swal-button {
+
 }
 
 
@@ -713,6 +734,12 @@ nav a {
     .article-detail-two.flex-col-reverse{
         flex-direction: column-reverse;
     }
+
+    .presentation .video{
+       max-width: 100%;
+        width: 90%;
+        height: auto;
+    }
 }
 
 @media (601px <= width < 992px) {
@@ -831,6 +858,11 @@ nav a {
 
     .article-detail-two.flex-col-reverse{
         flex-direction: column-reverse;
+    }
+
+    .presentation .video{
+        max-width: 100%;
+        width: 100%
     }
 }
 

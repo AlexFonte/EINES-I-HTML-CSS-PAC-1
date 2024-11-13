@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
-    "hover.css": "^2.3.2"
+    "hover.css": "^2.3.2",
+    "sweetalert": "^2.1.2"
   }
 }
