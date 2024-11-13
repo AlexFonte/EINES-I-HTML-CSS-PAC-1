@@ -7,7 +7,6 @@
     --custom-gray: #f2f2f2;
     --custom-white: #fefefe;
     --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
-    --zoom-in: scale(1.1);
 }
 
 .arizonia {
@@ -609,6 +608,11 @@ nav a {
 .info.paragraph{
     display: grid;
     gap: 3rem;
+}
+.presentation .video{
+    border-radius: 10px;
+    border: 0;
+    aspect-ratio: 16/9;
 }
 
 .swal-button {
