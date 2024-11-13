@@ -277,6 +277,17 @@ nav a {
     color: white;
 }
 
+#view-viana-category-detail {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../img/viana-av.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Alinea la imagen en la parte inferior */
+    width: 100%;
+    max-width: 100%;
+    color: white;
+}
+
 #view-viana .flex {
     /*gap: 3rem;*/
     /*    flex-direction: column;
@@ -421,8 +432,7 @@ nav a {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: stretch;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .content-section h2 {
@@ -555,6 +565,21 @@ nav a {
 
 .content-box-detail .img-card:hover {
     box-shadow: var(--box-sadow);
+}
+
+.presentation{
+    gap: 0;
+    padding: 2rem 0;
+    display: block;
+}
+
+.presentation .content-box-detail article{
+    justify-content: center;
+}
+
+.presentation .img-card.img-vertical{
+    width: 20%;
+    height: 30%;
 }
 
 /*####################### RESPONSIVES #################################*/
