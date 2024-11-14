@@ -2,7 +2,6 @@ import bacalhau from "../img/bacalhau.jpg";
 import bolasberlim1 from "../img/bolas-berlim-1.jpg";
 import coracao from "../img/coracao.jpg";
 import estacao from "../img/estacao.jpg";
-import festas from "../img/festas.jpg";
 import festas3 from "../img/festas-3.jpg";
 import gileannes from "../img/gil-eannes.jpg";
 import hombrecamara from "../img/hombre-camara.jpg";
@@ -41,7 +40,7 @@ data.forEach(resource => {
     div.classList.add("images");
     let img = document.createElement("img");
     img.src = getImage(resource.img_name);
-
+    img.classList.add("hvr-grow");
     div.appendChild(img);
     image.appendChild(div);
     tr.appendChild(image);
@@ -84,9 +83,6 @@ function getImage(name) {
             break;
         case 'estacao':
             img = estacao;
-            break;
-        case 'festas':
-            img = festas;
             break;
         case 'festas3':
             img = festas3;

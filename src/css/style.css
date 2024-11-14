@@ -194,6 +194,7 @@ menu {
 
 }
 
+table a,
 nav a {
     font-weight: bold;
     color: var(--v-gold);
@@ -646,34 +647,34 @@ table {
     font-size: 1.6rem;
 }
 
+
+
 td,
 th {
     border: 1px solid var(--v-gold);
     padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
-/*thead th:nth-child(1) {*/
-/*    width: 40%;*/
-/*}*/
+thead th:nth-child(1) {
+    width: 25%;
+}
 
-/*thead th:nth-child(2) {*/
-/*    width: 15%;*/
-/*}*/
+thead th:nth-child(2) {
+    width: 22%;
+}
 
-/*thead th:nth-child(3) {*/
-/*    width: 15%;*/
-/*}*/
+thead th:nth-child(3) {
+    width: 20%;
+}
 
-/*thead th:nth-child(4) {*/
-/*    width: 15%;*/
-/*}*/
-
-
-/*thead th:nth-child(5) {*/
-/*    width: 15%;*/
-/*}*/
+thead th:nth-child(4) {
+    width: 18%;
+}
 
 
+thead th:nth-child(5) {
+    width: 14%;
+}
 
 .images{
     display: flex;
