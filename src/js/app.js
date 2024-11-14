@@ -1,13 +1,9 @@
+import Swal from 'sweetalert2'
+
 
 const name = 'world';
 console.log(`Hello ${name}`);
 
-/*swal({
-    title: "",
-    className: "background-viana-hello"
-});*/
-
-const Swal = require('sweetalert2')
 const sweet = Swal.mixin({
     customClass: {
         container: "background-viana-hello",

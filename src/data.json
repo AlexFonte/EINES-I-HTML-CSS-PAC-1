@@ -1,15 +1,210 @@
-{
-  "recursos": [
-    {
-      "img": [
-        {
-          "url": "img/logos/logo-gold.png"
-        },
-        {
-          "url": "img/logos/logo-red.png"
-        }
-      ],
-      "autor" : "Logo",
-    }
-  ]
-}
+[
+  {
+    "author": "olharvianadocastelo",
+    "ubicacion": "Categoria",
+    "url": "bacalhau.jpg",
+    "img_name": "bacalhau",
+    "copyright": "All Rights",
+    "link": "https://www.olharvianadocastelo.pt/2016/03/sao-cerca-de-quarenta-os-restaurantes.html"
+  },
+  {
+    "author": "VIANA COOL",
+    "ubicacion": "Categoria",
+    "url": "bolas-berlim-1.jpg",
+    "img_name": "bolasberlim1",
+    "copyright": "All Rights",
+    "link": "https://vianacool.com/en/eat/confeitaria-manuel-natario"
+  },
+  {
+    "author": "VIANA FESTAS",
+    "ubicacion": "Presentació",
+    "url": "coracao.jpg",
+    "img_name": "coracao",
+    "copyright": "All Rights",
+    "link": "https://festasdagonia.com/a-romaria/desfile-da-mordomia/"
+  },
+  {
+    "author": "Osvaldo Gago",
+    "ubicacion": "Categoria",
+    "url": "estacao.jpg",
+    "img_name": "estacao",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Estacao_Comboio_Viana_Castelo.JPG"
+  },
+  {
+    "author": "Joaomartinho63",
+    "ubicacion": "Categoria",
+    "url": "festas.jpg",
+    "img_name": "festas",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Festa_no_chafariz.jpg"
+  },
+  {
+    "author": "VIANA FESTAS",
+    "ubicacion": "Portada, Categoria",
+    "url": "festas-3.jpg",
+    "img_name": "festas3",
+    "copyright": "All Rights",
+    "link": "https://festasdagonia.com/en/a-romaria/desfile-da-mordomia/"
+  },
+  {
+    "author": "Xosema",
+    "ubicacion": "Categoria",
+    "url": "gil-eannes.jpg",
+    "img_name": "gileannes",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Viana_do_Castelo_-_Buque_Gil_Eannes_-_01.jpg"
+  },
+  {
+    "author": "png design",
+    "ubicacion": "Categoria",
+    "url": "hombre-camara.jpg",
+    "img_name": "hombrecamara",
+    "copyright": "Copi Left",
+    "link": "https://unsplash.com/es/fotos/persona-usando-la-camara-plegable-CSWcbb_FriU"
+  },
+  {
+    "author": "Viver Viana",
+    "ubicacion": "Presentació",
+    "url": "mapa.jpg",
+    "img_name": "mapa",
+    "copyright": "All Rights",
+    "link": "https://viverviana.pt/viana-do-castelo/"
+  },
+  {
+    "author": "A Casa do Mestre",
+    "ubicacion": "Categoria",
+    "url": "meia-luas.jpg",
+    "img_name": "meialuas",
+    "copyright": "All Rights",
+    "link": "https://acasadomestre.com/pastelarias-e-doces-de-viana/"
+  },
+  {
+    "author": "Camara Municipal Viana do Castelo",
+    "ubicacion": "Categoria",
+    "url": "museu-traje.webp",
+    "img_name": "museutraje",
+    "copyright": "All Rights",
+    "link": "https://www.cm-viana-castelo.pt/visitar/turismo-e-lazer/museus-e-espacos-museologicos/museu-do-traje/apresentacao/"
+  },
+  {
+    "author": "Roberto Santorini",
+    "ubicacion": "Categoria",
+    "url": "ponte-eiffel.jpg",
+    "img_name": "ponteeiffel",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Ponte_Eiffel_em_Viana_do_Castelo.jpg"
+  },
+  {
+    "author": "Joseolgon",
+    "ubicacion": "Categoria",
+    "url": "ponte-lima.jpg",
+    "img_name": "pontelima",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Aerial_Ponte_de_Lima.jpg"
+  },
+  {
+    "author": "Camara Municipal Viana do Castelo",
+    "ubicacion": "Categoria",
+    "url": "praia-cabedelo.webp",
+    "img_name": "praiacabedelo",
+    "copyright": "All Rights",
+    "link": "https://www.cm-viana-castelo.pt/locais/praia-do-cabedelo/"
+  },
+  {
+    "author": "olharvianadocastelo",
+    "ubicacion": "Categoria",
+    "url": "santa-luzia-5.jpg",
+    "img_name": "santaluzia5",
+    "copyright": "All Rights",
+    "link": "https://www.olharvianadocastelo.pt/2019/01/viana-santa-luzia-vista-de-outra.html"
+  },
+  {
+    "author": "Afonso Matos",
+    "ubicacion": "Categoria",
+    "url": "santa-luzia-10.jpg",
+    "img_name": "santaluzia10",
+    "copyright": "Copi Left",
+    "link": "https://unsplash.com/es/fotos/un-gran-edificio-de-piedra-CffeVaem-U0"
+  },
+  {
+    "author": "olharvianadocastelo",
+    "ubicacion": "Categoria",
+    "url": "santa-luzia-11.jpg",
+    "img_name": "santaluzia11",
+    "copyright": "All Rights",
+    "link": "https://www.olharvianadocastelo.pt/2019/01/viana-santa-luzia-vista-de-outra.html"
+  },
+  {
+    "author": "olharvianadocastelo",
+    "ubicacion": "Categoria",
+    "url": "santa-luzia-12.jpg",
+    "img_name": "santaluzia12",
+    "copyright": "All Rights",
+    "link": "https://www.olharvianadocastelo.pt/2019/01/viana-santa-luzia-vista-de-outra.html"
+  },
+  {
+    "author": "Receitas e Menus",
+    "ubicacion": "Categoria",
+    "url": "sarrabulho.jpg",
+    "img_name": "sarrabulho",
+    "copyright": "All Rights",
+    "link": "https://www.receitasemenus.net/arroz-de-sarrabulho-a-moda-de-ponte-de-lima/"
+  },
+  {
+    "author": "Portugal Memories Tour",
+    "ubicacion": "Categoria",
+    "url": "torta.webp",
+    "img_name": "torta",
+    "copyright": "All Rights",
+    "link": "https://portugalmemoriestour.com/sabia-torta-de-viana-deliciosa-agora-certificada/"
+  },
+  {
+    "author": "olharvianadocastelo",
+    "ubicacion": "Portada, Categoria",
+    "url": "viana.jpg",
+    "img_name": "viana",
+    "copyright": "All Rights",
+    "link": "https://www.olharvianadocastelo.pt/2020/01/viana-do-castelo-e-cidade-ha-172-anos.html"
+  },
+  {
+    "author": "Camara Municipal Viana do Castelo",
+    "ubicacion": "Portada",
+    "url": "viana-2.jpg",
+    "img_name": "viana2",
+    "copyright": "All Rights",
+    "link": "https://www.cm-viana-castelo.pt/"
+  },
+  {
+    "author": "Bextrel",
+    "ubicacion": "Presentació",
+    "url": "viana-av.jpg",
+    "img_name": "vianaav",
+    "copyright": "Copi Left",
+    "link": "https://commons.wikimedia.org/wiki/File:Vista_aerea_-_Viana_do_Castelo_-_29.01.2023.jpg"
+  },
+  {
+    "author": "RH&XL",
+    "ubicacion": "Categoria",
+    "url": "viana-avenida.jpg",
+    "img_name": "vianaavenida",
+    "copyright": "All Rights",
+    "link": "https://www.flickr.com/photos/hong-xiao/52618653978/in/photolist-2oaJmC3-2q9HWbk-t7tSy-2oQ3tuK-pC3Nxf-XeWFmq-21Qy6ub-9zxPF2-MqVC1i-2dhH2d8-ffwDQf-2oawFst-2oarPiF-2oaJmjh-ffwDYs-HQmNcD-JdDW8b-GC4ejB-WGQVBm-9aYhFC-9aYhyU-Uit4FE-HXiHqC-2oyV7Fy-2pdzUj7-9aYhLY-BSdHud-sy5Wh-G5MUby-7BSr8Y-24LWYGh-XiBHer-sy5Wg-UnfdFh-X6TbXF-8Fcfuk-2pdzUjh-2iGGiwR-U346WW-X3UUmu-YtYrQ8-XeWEU3-pbDrmW-mQQ5qc-aPeDHn-8uFF1T-wVxhaL-Qm6j1T-HXiHkN-2bDpFcC"
+  },
+  {
+    "author": "Alex Ramos Da Fonte & Logo.com",
+    "ubicacion": "Totes les pagines",
+    "url": "logos/logo-gold.png",
+    "img_name": "logogold",
+    "copyright": "Copi Left",
+    "link": "https://www.logo.com (creat per mi)"
+  },
+  {
+    "author": "Alex Ramos Da Fonte & Logo.com",
+    "ubicacion": "Totes les pagines",
+    "url": "logos/logo-red.png",
+    "img_name": "logored",
+    "copyright": "Copi Left",
+    "link": "https://www.logo.com (creat per mi)"
+  }
+]

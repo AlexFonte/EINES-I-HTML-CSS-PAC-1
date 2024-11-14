@@ -640,7 +640,7 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
     margin-bottom: 3rem;
     border: 1px solid var(--v-gold);
     font-size: 1.6rem;
@@ -651,6 +651,29 @@ th {
     border: 1px solid var(--v-gold);
     padding: 0.5rem 0 0.5rem 0.5rem;
 }
+
+/*thead th:nth-child(1) {*/
+/*    width: 40%;*/
+/*}*/
+
+/*thead th:nth-child(2) {*/
+/*    width: 15%;*/
+/*}*/
+
+/*thead th:nth-child(3) {*/
+/*    width: 15%;*/
+/*}*/
+
+/*thead th:nth-child(4) {*/
+/*    width: 15%;*/
+/*}*/
+
+
+/*thead th:nth-child(5) {*/
+/*    width: 15%;*/
+/*}*/
+
+
 
 .images{
     display: flex;
@@ -812,6 +835,8 @@ th {
     .content-box-detail article.nav-web {
         width: 95%;
     }
+
+    table {font-size: 1.2rem};
 }
 
 @media (601px <= width < 992px) {
