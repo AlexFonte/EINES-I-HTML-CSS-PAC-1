@@ -282,7 +282,7 @@ nav a {
 }
 
 #view-viana-category {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana-area-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Alinea la imagen en la parte inferior */
@@ -354,10 +354,10 @@ nav a {
     background-color: rgba(214, 183, 111, 0.85);
     border-radius: 25rem;
     padding: 1rem 2.5rem;
-   font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
-.background-viana-hello-btn{
+.background-viana-hello-btn {
     font-size: 1.5rem;
 }
 
@@ -636,6 +636,45 @@ nav a {
     padding: 3rem;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+    border: 1px solid var(--v-gold);
+    font-size: 1.6rem;
+}
+
+td,
+th {
+    border: 1px solid var(--v-gold);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.images{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.t-img-1 .images img {
+    max-width: 60%;
+    height: auto;
+}
+
+.t-img-2 .images img {
+    max-width: 30%;
+    height: auto;
+}
+
+
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
     header {
@@ -707,7 +746,7 @@ nav a {
         display: inline-flex;
     }
 
-    .background-viana-hello-popup{
+    .background-viana-hello-popup {
         width: 100%;
     }
 
@@ -846,7 +885,7 @@ nav a {
         height: auto;
     }
 
-    .background-viana-hello-popup{
+    .background-viana-hello-popup {
         width: 100%;
     }
 
