@@ -1,0 +1,15 @@
+{
+  "recursos": [
+    {
+      "img": [
+        {
+          "url": "img/logos/logo-gold.png"
+        },
+        {
+          "url": "img/logos/logo-red.png"
+        }
+      ],
+      "autor" : "Logo",
+    }
+  ]
+}
