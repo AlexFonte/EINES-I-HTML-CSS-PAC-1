@@ -4,11 +4,13 @@
 
 
 :root {
-    --v-red: #ED1846;
     --v-gold: #D6B76F;
-    --onest-sans-serif: 'Onest';
+    --v-red: #ED1846;
     --custom-gray: #f2f2f2;
     --custom-white: #fefefe;
+    --custom-grey: #f9f9f9;
+    --white: white;
+    --onest-sans-serif: 'Onest';
     --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
 }
 
@@ -53,7 +55,7 @@ header {
     width: 100%;
     max-width: 100%;
     padding: 1rem 0;
-    background: #F9F9F9;
+    background: var(--custom-grey);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -65,7 +67,7 @@ header {
 
 footer {
     padding: 1rem 0;
-    background: #F9f9f9;
+    background: var(--custom-grey);
 }
 
 q {
@@ -263,7 +265,7 @@ table .images img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Alinea la imagen en la parte inferior */
-    color: white;
+    color: var(--white);
     width: 50%;
     min-height: 20rem;
     align-content: space-around;
@@ -272,7 +274,7 @@ table .images img{
 }
 
 .background-viana-hello .swal-title {
-    color: white;
+    color: var(--white);
 
 }
 
@@ -284,7 +286,7 @@ table .images img{
     width: 100%;
     max-width: 100%;
     min-height: 65rem;
-    color: white;
+    color: var(--white);
 }
 
 #view-viana-category {
@@ -294,7 +296,7 @@ table .images img{
     background-position: center; /* Alinea la imagen en la parte inferior */
     width: 100%;
     max-width: 100%;
-    color: white;
+    color: var(--white);
 }
 
 #view-viana-category-detail {
@@ -305,7 +307,7 @@ table .images img{
     background-position: center; /* Alinea la imagen en la parte inferior */
     width: 100%;
     max-width: 100%;
-    color: white;
+    color: var(--white);
 }
 
 #view-viana-presentacio {
@@ -316,7 +318,7 @@ table .images img{
     background-position: center; /* Alinea la imagen en la parte inferior */
     width: 100%;
     max-width: 100%;
-    color: white;
+    color: var(--white);
 }
 
 #view-viana .flex {
@@ -356,7 +358,7 @@ table .images img{
 .background-viana-hello-btn,
 .btn .btn-button,
 .btn .btn-discover {
-    color: white;
+    color: var(--white);
     background-color: rgba(214, 183, 111, 0.85);
     border-radius: 25rem;
     padding: 1rem 2.5rem;
@@ -637,7 +639,7 @@ table .images img,
 .content-box-detail article.nav-web {
     width: 80%;
     text-align: justify-all;
-    background-color: white;
+    background-color: var(--white);
     border: 1px solid var(--v-gold);
     border-radius: 10px;
     padding: 3rem;
