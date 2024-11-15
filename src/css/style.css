@@ -200,6 +200,10 @@ nav a {
     color: var(--v-gold);
 }
 
+table .images img{
+
+}
+
 .burger-menu-active a {
     color: var(--v-red);
 }
@@ -480,7 +484,6 @@ nav a {
     height: auto;
     object-fit: cover;
     aspect-ratio: 600/400;
-    /*border-radius: 10px 10px 0 0;*/
 }
 
 .card-category a {
@@ -494,6 +497,7 @@ nav a {
 
 }
 
+table .images img:hover,
 .content-box-detail article.nav-web:hover,
 .card-category:hover {
     border: 1px solid var(--v-red);
@@ -537,6 +541,7 @@ nav a {
     gap: 3rem;
 }
 
+table .images img,
 .content-box-detail .img-card {
     border-radius: 10px;
     overflow: hidden;
