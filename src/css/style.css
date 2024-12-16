@@ -2,63 +2,61 @@
 
 @import "../../node_modules/hover.css/css/hover.css";
 
-
 :root {
-    --v-gold: #D6B76F;
-    --v-red: #ED1846;
-    --custom-gray: #f2f2f2;
-    --custom-white: #fefefe;
-    --custom-grey: #f9f9f9;
-    --white: white;
-    --onest-sans-serif: 'Onest';
-    --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
+  --v-gold: #d6b76f;
+  --v-red: #ed1846;
+  --custom-gray: #f2f2f2;
+  --custom-white: #fefefe;
+  --custom-grey: #f9f9f9;
+  --white: white;
+  --onest-sans-serif: "Onest";
+  --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.85);
 }
 
 .arizonia {
-    font-family: "Arizonia", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .gold {
-    color: var(--v-gold);
+  color: var(--v-gold);
 }
-
 
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 /* REGLES LAYOUTS */
 
 body {
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 100%;
-    background: var(--custom-white);
-    font-size: 1.6rem;
-    font-family: var(--onest-sans-serif), sans-serif;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 100%;
+  background: var(--custom-white);
+  font-size: 1.6rem;
+  font-family: var(--onest-sans-serif), sans-serif;
 }
 
 header {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem 0;
-    background: var(--custom-grey);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0;
+  background: var(--custom-grey);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /*main {*/
@@ -66,449 +64,497 @@ header {
 /*}*/
 
 footer {
-    padding: 1rem 0;
-    background: var(--custom-grey);
+  padding: 1rem 0;
+  background: var(--custom-grey);
 }
 
 q {
-    quotes: "“" "”" "‘" "’";
+  quotes: "“" "”" "‘" "’";
 }
-
 
 .container-section,
 .container {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container-section {
-    display: grid;
-    gap: 4rem;
-    grid-template-rows: auto 1fr;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
+  display: grid;
+  gap: 4rem;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
 
-
 .container.last {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ##################################### CSS MENU ################################### */
 /*TODO RESPONSIVE*/
 
 .header-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    text-align: left;
-    font-size: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  font-size: 2.4rem;
 }
 
-
 .logo {
-    display: block;
-    width: 11rem;
-    height: 11rem;
-    float: left;
+  display: block;
+  width: 11rem;
+  height: 11rem;
+  float: left;
 }
 
 .hamburger-icon {
-    display: none;
+  display: none;
 }
 
 .hamburger-icon input[type="checkbox"] {
-    appearance: none;
+  appearance: none;
 }
 
 .logo-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: contain; /* Ajusta la imagen al contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-image: url("../img/logos/logo-gold.png");
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain; /* Ajusta la imagen al contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-image: url("../img/logos/logo-gold.png");
 }
 
 .logo-img:hover {
-    background-image: url("../img/logos/logo-red.png");
+  background-image: url("../img/logos/logo-red.png");
 }
 
 menu {
-    width: 60%;
-    height: 100%;
-    float: right;
+  width: 60%;
+  height: 100%;
+  float: right;
 }
 
-
-.menu, .burger {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-
+.menu,
+.burger {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .burger {
-    float: right;
-    font-size: 2.4rem;
-    list-style: none;
-    justify-content: space-evenly;
-    gap: 2.5rem;
+  float: right;
+  font-size: 2.4rem;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 2.5rem;
 }
 
 .burger li {
-    display: inline-block;
-    margin: 0;
+  display: inline-block;
+  margin: 0;
 }
 
 .content-section-presentation:hover h2,
 .container-section:hover h2,
 .burger li a:hover:not(.burger-menu-active a) {
-    border-bottom: 3px solid var(--v-red);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-bottom: 3px solid var(--v-red);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .content-section-presentation h2,
 .container-section h2,
 .burger-menu-active a {
-    border-bottom: 3px solid var(--v-gold);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+  border-bottom: 3px solid var(--v-gold);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 table a,
 nav a {
-    font-weight: bold;
-    color: var(--v-gold);
-}
-
-table .images img{
-
+  font-weight: bold;
+  color: var(--v-gold);
 }
 
 .burger-menu-active a {
-    color: var(--v-red);
+  color: var(--v-red);
 }
 
 .fa-x {
-    display: none;
+  display: none;
 }
-
 
 /* ##################################### CSS FOOTER ################################### */
 
 .footer {
-    color: var(--v-gold);
-    font-size: 1.3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    place-content: center space-between;
-    flex-wrap: wrap;
+  color: var(--v-gold);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  place-content: center space-between;
+  flex-wrap: wrap;
 }
 
 .footer-logo-autor,
 .follow,
 .legal {
-    display: grid;
-    row-gap: 0.5rem;
-    justify-items: center;
+  display: grid;
+  row-gap: 0.5rem;
+  justify-items: center;
 }
 
 .follow {
-    row-gap: 2rem;
-
+  row-gap: 2rem;
 }
 
 .follow ul {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.follow a, .legal a {
-    color: var(--v-gold);
+.footer-menu a,
+.follow a,
+.legal a {
+  color: var(--v-gold);
 }
 
-.follow a:hover, .legal a:hover {
-    color: var(--v-red);
+.follow a:hover,
+.legal a:hover {
+  color: var(--v-red);
 }
 
 .legal {
 }
 
-
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
 .background-viana-hello-popup {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/festas-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Alinea la imagen en la parte inferior */
-    color: var(--white);
-    width: 50%;
-    min-height: 20rem;
-    align-content: space-around;
-    font-family: var(--onest-sans-serif), sans-serif;
-    font-size: 1.8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/festas-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Alinea la imagen en la parte inferior */
+  color: var(--white);
+  width: 50%;
+  min-height: 20rem;
+  align-content: space-around;
+  font-family: var(--onest-sans-serif), sans-serif;
+  font-size: 1.8rem;
 }
 
 .background-viana-hello .swal-title {
-    color: var(--white);
-
+  color: var(--white);
 }
 
 #view-viana {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top; /* Alinea la imagen en la parte inferior */
-    width: 100%;
-    max-width: 100%;
-    min-height: 65rem;
-    color: var(--white);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana.jpg); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: top; Alinea la imagen en la parte inferior */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  /* min-height: 65rem; */
+  /* color: var(--white); */
 }
 
 #view-viana-category {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/viana-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Alinea la imagen en la parte inferior */
-    width: 100%;
-    max-width: 100%;
-    color: var(--white);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../img/viana-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Alinea la imagen en la parte inferior */
+  width: 100%;
+  max-width: 100%;
+  color: var(--white);
 }
 
 #view-viana-category-detail {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../img/santa-luzia-10.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Alinea la imagen en la parte inferior */
-    width: 100%;
-    max-width: 100%;
-    color: var(--white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Alinea la imagen en la parte inferior */
+  width: 100%;
+  max-width: 100%;
+  color: var(--white);
 }
 
 #view-viana-presentacio {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../img/viana-av.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Alinea la imagen en la parte inferior */
-    width: 100%;
-    max-width: 100%;
-    color: var(--white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Alinea la imagen en la parte inferior */
+  width: 100%;
+  max-width: 100%;
+  color: var(--white);
+}
+
+#view-viana {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-height: 65rem;
+  color: var(--white);
+}
+
+#view-viana .background-image img {
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.58);
 }
 
 #view-viana .flex {
-    gap: 5rem;
-    height: 100%;
-    max-height: 100%;
-    display: grid;
-    align-content: space-between;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
+  gap: 5rem;
+  height: 100%;
+  max-height: 100%;
+  display: grid;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
 }
 
 .slogan {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .slogan h1 {
-    font-size: 9rem;
+  font-size: 9rem;
 }
 
 .category h1 {
-    font-size: 4rem;
-    /*color: var(--v-gold);*/
+  font-size: 4rem;
+  /*color: var(--v-gold);*/
 }
 
 .slogan p {
-    margin: 3rem 0;
-    font-size: 3rem;
-    font-weight: 600;
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .slogan .btn {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .background-viana-hello-btn,
 .btn .btn-button,
 .btn .btn-discover {
-    color: var(--white);
-    background-color: rgba(214, 183, 111, 0.85);
-    border-radius: 25rem;
-    padding: 1rem 2.5rem;
-    font-size: 1.8rem;
+  color: var(--white);
+  background-color: rgba(214, 183, 111, 0.85);
+  border-radius: 25rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
 }
 
 .background-viana-hello-btn {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .background-viana-hello-btn:hover,
 .btn .btn-discover:hover {
-    background-color: rgba(237, 24, 70, 0.85);
+  background-color: rgba(237, 24, 70, 0.85);
 }
 
-.section-1, .section-2 {
-    padding: 3rem 0;
+.section-1,
+.section-2 {
+  padding: 3rem 0;
 }
 
 .even,
 .section-1 {
-    background-color: var(--custom-gray);
+  background-color: var(--custom-gray);
 }
 
-
 .card {
-    padding: 2rem;
-    border-radius: 1.5rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
-    gap: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .card.last {
-    height: 25rem;
+  height: 25rem;
 }
 
 .card .image-card {
-    display: block;
-    width: 60rem;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
-    /*width: 100%;*/
-    max-width: 100%;
+  display: block;
+  width: 60rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  /*width: 100%;*/
+  max-width: 100%;
+  /*   clip-path: polygon(
+    0% 0%,
+    100% 0%, 
+    100% 50%,
+    100% 50%,
+    100% 50%,
+    100% 90%,
+    60% 90%,
+    60% 100%,
+    50% 90%,
+    0% 90%
+  ); */
+  clip-path: polygon(
+    5% 0%,
+    95% 0%,
+    100% 5%,
+    100% 85%,
+    95% 90%,
+    85% 90%,
+    85% 100%,
+    70% 90%,
+    5% 90%,
+    0% 85%,
+    0% 5%
+  );
+  transition: clip-path 1s linear;
+}
+.card .image-card:hover {
+  clip-path: polygon(
+    5% 0%,
+    85% 0%,
+    90% 5%,
+    90% 20%,
+    100% 20%,
+    90% 30%,
+    90% 80%,
+    85% 85%,
+    5% 85%,
+    0% 80%,
+    0% 5%
+  );
 }
 
 .card .content {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    place-items: center;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  place-items: center;
+  justify-content: space-between;
 }
 
 .card {
-    align-items: center;
+  align-items: center;
 }
 
 .card h2 {
-    font-size: 4rem;
-    /*
+  font-size: 4rem;
+  /*
     margin-bottom: 2rem;
     */
 }
 
 .card p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
-
 .btn.btn-button {
-    background-color: rgba(214, 183, 111, 1);
-
+  background-color: rgba(214, 183, 111, 1);
 }
 
 .btn .btn-button:hover {
-    background-color: rgba(237, 24, 70, 0.85);
-
+  background-color: rgba(237, 24, 70, 0.85);
 }
 
 .category {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .content-section {
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    padding: 3rem 0;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 3rem 0;
 }
 
 .content-section h2 {
-    width: auto;
-    font-size: 2rem;
+  width: auto;
+  font-size: 2rem;
 }
 
 .content-box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 }
 
 .card-category {
-    overflow: hidden; /* Evita que la imagen se salga del contenedor */
-    border-radius: 10px;
-    border: 2px solid var(--v-gold);
-    background-color: var(--custom-white);
+  overflow: hidden; /* Evita que la imagen se salga del contenedor */
+  border-radius: 10px;
+  border: 2px solid var(--v-gold);
+  background-color: var(--custom-white);
 }
 
 .card-category .img-card {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 600/400;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 600/400;
 }
 
 .card-category a {
-    color: var(--v-gold);
+  color: var(--v-gold);
 }
 
 .card-category figcaption {
-    width: 95%;
-    margin: auto;
-    padding: 1rem 0;
-
+  width: 95%;
+  margin: auto;
+  padding: 1rem 0;
 }
 
 table .images img:hover,
 .content-box-detail article.nav-web:hover,
 .card-category:hover {
-    border: 1px solid var(--v-red);
-    box-shadow: var(--box-sadow);
+  border: 1px solid var(--v-red);
+  box-shadow: var(--box-sadow);
 }
 
 .card-category:hover a {
-    color: var(--v-red);
+  color: var(--v-red);
 }
 
 /*
@@ -518,559 +564,548 @@ table .images img:hover,
 }*/
 
 .content-box-detail {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
 }
 
 .content-box-detail article {
-    max-width: 100%;
-    width: 90%;
+  max-width: 100%;
+  width: 90%;
 }
 
 /*:not(:first-child)*/
 .content-box-detail article {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
 }
 
 table .images img,
 .content-box-detail .img-card {
-    border-radius: 10px;
-    overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .article-detail-two .img-card,
 .article-detail-two .info {
-    max-width: 100%;
-    width: 46%;
-    height: auto;
+  max-width: 100%;
+  width: 46%;
+  height: auto;
 }
 
 .content-box-detail .article-detail-tree {
-    justify-content: center;
-    gap: 2rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .article-detail-tree .img-card,
 .article-detail-tree .info {
-    max-width: 100%;
-    width: 31%;
-    height: auto;
+  max-width: 100%;
+  width: 31%;
+  height: auto;
 }
 
 .info.p-two {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .info.list {
-    text-align: left;
+  text-align: left;
 }
 
 .info.list ul {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    border-radius: 5px;
-    font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
 }
 
 .info.list li::marker {
-    color: var(--v-gold);
+  color: var(--v-gold);
 }
 
 .info.list li {
-    list-style: disc outside;
-    padding-left: 0.5rem;
+  list-style: disc outside;
+  padding-left: 0.5rem;
 }
 
 .content-box-detail .img-card:hover {
-    box-shadow: var(--box-sadow);
+  box-shadow: var(--box-sadow);
 }
 
 .presentation {
-    gap: 0;
-    padding: 2rem 0;
-    display: block;
+  gap: 0;
+  padding: 2rem 0;
+  display: block;
 }
 
 .presentation .info {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .presentation .info h3 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .presentation .content-box-detail article {
-    justify-content: center;
-    gap: 4rem;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .presentation .img-card.img-vertical {
-    width: 20%;
+  width: 20%;
 }
 
 .info.paragraph {
-    display: grid;
-    gap: 3rem;
+  display: grid;
+  gap: 3rem;
 }
 
 .presentation .video {
-    border-radius: 10px;
-    border: 0;
-    aspect-ratio: 16/9;
+  border-radius: 10px;
+  border: 0;
+  aspect-ratio: 16/9;
 }
 
 .swal-button {
-
 }
 
 .content-box-detail article.nav-web {
-    width: 80%;
-    text-align: justify-all;
-    background-color: var(--white);
-    border: 1px solid var(--v-gold);
-    border-radius: 10px;
-    padding: 3rem;
+  width: 80%;
+  text-align: justify-all;
+  background-color: var(--white);
+  border: 1px solid var(--v-gold);
+  border-radius: 10px;
+  padding: 3rem;
 }
 
 table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    margin-bottom: 3rem;
-    border: 1px solid var(--v-gold);
-    font-size: 1.6rem;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: 1px solid var(--v-gold);
+  font-size: 1.6rem;
 }
-
-
 
 td,
 th {
-    border: 1px solid var(--v-gold);
-    padding: 0.5rem 0 0.5rem 0.5rem;
+  border: 1px solid var(--v-gold);
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 thead th:nth-child(1) {
-    width: 25%;
+  width: 25%;
 }
 
 thead th:nth-child(2) {
-    width: 22%;
+  width: 22%;
 }
 
 thead th:nth-child(3) {
-    width: 20%;
+  width: 20%;
 }
 
 thead th:nth-child(4) {
-    width: 18%;
+  width: 18%;
 }
-
 
 thead th:nth-child(5) {
-    width: 14%;
+  width: 14%;
 }
 
-.images{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    justify-items: center;
-    justify-content: space-evenly;
-    max-width: 100%;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
+.images {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
 .t-img-1 .images img {
-    max-width: 60%;
-    height: auto;
+  max-width: 60%;
+  height: auto;
 }
 
 .t-img-2 .images img {
-    max-width: 30%;
-    height: auto;
+  max-width: 30%;
+  height: auto;
 }
-
 
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
-    header {
-        /*padding: 0;*/
-    }
+  header {
+    /*padding: 0;*/
+  }
 
-    .container-section,
-    .container {
-        max-width: 100%;
-        width: 90%;
+  .container-section,
+  .container {
+    max-width: 100%;
+    width: 90%;
+  }
 
-    }
+  .card,
+  .footer {
+    flex-direction: column;
+    height: 100%;
+  }
 
-    .card,
-    .footer {
-        flex-direction: column;
-        height: 100%;
-    }
+  .logo {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
 
+  .logo-img {
+    width: 80%;
+    height: 80%;
+  }
 
-    .logo {
-        width: 100%;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: stretch;
-    }
+  .hamburger-icon {
+    display: block;
+  }
 
-    .logo-img {
-        width: 80%;
-        height: 80%;
-    }
+  nav {
+    width: 100%;
+  }
 
-    .hamburger-icon {
-        display: block;
-    }
+  nav .burger {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-out;
+  }
 
-    nav {
-        width: 100%;
-    }
+  /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
+    margin-top: 1rem;
+    height: auto;
+    max-height: 30rem;
+    transition: all 0.5s ease-in;
+  }
 
-    nav .burger {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        max-height: 0;
-        transition: all 0.5s ease-out;
-    }
+  /* Hiding the bars icon on checkbox checked state */
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+  }
 
-    /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
-        margin-top: 1rem;
-        height: auto;
-        max-height: 30rem;
-        transition: all 0.5s ease-in;
-    }
+  /* Showing the cross icon on checkbox checked state */
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display: inline-flex;
+  }
 
-    /* Hiding the bars icon on checkbox checked state */
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
+  .background-viana-hello-popup {
+    width: 100%;
+  }
 
-    /* Showing the cross icon on checkbox checked state */
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
-        display: inline-flex;
-    }
+  #view-viana {
+    height: 50rem; /* Ajusta la altura para pantallas más pequeñas */
+  }
 
-    .background-viana-hello-popup {
-        width: 100%;
-    }
+  #view-viana .slogan h1 {
+    font-size: 5.45rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
 
-    #view-viana {
-        height: 50rem; /* Ajusta la altura para pantallas más pequeñas */
-    }
+  #view-viana .slogan p {
+    font-size: 2rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
 
-    #view-viana .slogan h1 {
-        font-size: 5.45rem; /* Reducir tamaño de fuente en pantallas pequeñas */
-    }
+  .legal {
+    margin-top: 1rem;
+  }
 
-    #view-viana .slogan p {
-        font-size: 2rem; /* Reducir tamaño de fuente en pantallas pequeñas */
-    }
+  .card .content {
+    gap: 3rem;
+  }
 
-    .legal {
-        margin-top: 1rem;
-    }
+  .section-1,
+  .section-2 {
+    padding: 0 0 1rem;
+  }
 
-    .card .content {
-        gap: 3rem;
-    }
+  .card.last {
+    height: auto;
+  }
 
-    .section-1, .section-2 {
-        padding: 0 0 1rem;
-    }
+  .content-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .card.last {
-        height: auto;
-    }
+  .content-box-detail article {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+  }
 
-    .content-box {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .article-detail-two .img-card,
+  .article-detail-two .info,
+  .article-detail-tree .img-card,
+  .article-detail-tree .info {
+    width: 100%;
+  }
 
-    .content-box-detail article {
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 95%;
-    }
+  .article-detail-two.flex-col-reverse {
+    flex-direction: column-reverse;
+  }
 
-    .article-detail-two .img-card,
-    .article-detail-two .info,
-    .article-detail-tree .img-card,
-    .article-detail-tree .info {
-        width: 100%;
-    }
+  .presentation .img-card.img-vertical {
+    width: 90%;
+  }
 
-    .article-detail-two.flex-col-reverse {
-        flex-direction: column-reverse;
-    }
+  .presentation .video {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+  }
 
-    .presentation .img-card.img-vertical {
-        width: 90%;
-    }
+  .content-box-detail article.nav-web {
+    width: 95%;
+  }
 
-    .presentation .video {
-        max-width: 100%;
-        width: 90%;
-        height: auto;
-    }
-
-    .content-box-detail article.nav-web {
-        width: 95%;
-    }
-
-    table {font-size: 1.2rem};
+  table {
+    font-size: 1.2rem;
+  }
 }
 
-@media (601px <= width < 992px) {
+@media (600px <= width < 992px) {
+  .container-section,
+  .container {
+    max-width: 100%;
+    width: 95%;
+  }
 
-    .container-section,
-    .container {
-        max-width: 100%;
-        width: 95%;
-    }
+  .card,
+  .footer {
+    flex-direction: column;
+  }
 
-    .card,
-    .footer {
-        flex-direction: column;
-    }
+  .logo {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
 
-    .logo {
-        width: 100%;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: stretch;
-    }
+  .hamburger-icon {
+    display: block;
+  }
 
-    .hamburger-icon {
-        display: block;
-    }
+  nav {
+    width: 100%;
+  }
 
-    nav {
-        width: 100%;
-    }
+  nav .burger {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-out;
+  }
 
-    nav .burger {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        max-height: 0;
-        transition: all 0.5s ease-out;
-    }
+  /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
+    margin-top: 1rem;
+    height: auto;
+    max-height: 30rem;
+    transition: all 0.5s ease-in;
+  }
 
-    /*determining whether the header contains a checkbox input that is checked before expanding the navigation's height to 100 pixels to make it visible.*/
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) nav .burger {
-        margin-top: 1rem;
-        height: auto;
-        max-height: 30rem;
-        transition: all 0.5s ease-in;
-    }
+  /* Hiding the bars icon on checkbox checked state */
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+  }
 
-    /* Hiding the bars icon on checkbox checked state */
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
+  /* Showing the cross icon on checkbox checked state */
+  .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display: inline-flex;
+  }
 
-    /* Showing the cross icon on checkbox checked state */
-    .menu:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
-        display: inline-flex;
-    }
+  .legal {
+    margin-top: 1rem;
+  }
 
-    .legal {
-        margin-top: 1rem;
-    }
+  .card .content {
+    gap: 2rem;
+  }
 
-    .card .content {
-        gap: 2rem;
-    }
+  .card.last {
+    height: auto;
+  }
 
-    .card.last {
-        height: auto;
-    }
+  .background-viana-hello-popup {
+    width: 100%;
+  }
 
-    .background-viana-hello-popup {
-        width: 100%;
-    }
+  #view-viana .flex {
+    gap: 11rem;
+  }
 
-    #view-viana .flex {
-        gap: 11rem;
-    }
+  #view-viana .slogan h1 {
+    font-size: 6rem;
+  }
 
-    #view-viana .slogan h1 {
-        font-size: 6rem;
-    }
+  .category h1 {
+    font-size: 4.5rem;
+  }
 
-    .category h1 {
-        font-size: 4.5rem;
-    }
+  .content-section h2 {
+    font-size: 2.5rem;
+  }
 
-    .content-section h2 {
-        font-size: 2.5rem;
-    }
+  #view-viana .slogan p {
+    font-size: 2rem;
+  }
 
-    #view-viana .slogan p {
-        font-size: 2rem;
-    }
+  .section-1,
+  .section-2 {
+    padding: 0 0 1rem;
+  }
 
-    .section-1, .section-2 {
-        padding: 0 0 1rem;
-    }
+  .content-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .content-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .content-box-detail article {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+  }
 
-    .content-box-detail article {
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 90%;
-    }
+  .article-detail-two .img-card,
+  .article-detail-two .info,
+  .article-detail-tree .img-card,
+  .article-detail-tree .info {
+    width: 100%;
+  }
 
-    .article-detail-two .img-card,
-    .article-detail-two .info,
-    .article-detail-tree .img-card,
-    .article-detail-tree .info {
-        width: 100%;
-    }
+  .article-detail-two.flex-col-reverse {
+    flex-direction: column-reverse;
+  }
 
-    .article-detail-two.flex-col-reverse {
-        flex-direction: column-reverse;
-    }
+  .presentation .video {
+    max-width: 100%;
+    width: 100%;
+  }
 
-    .presentation .video {
-        max-width: 100%;
-        width: 100%
-    }
+  .presentation .img-card.img-vertical {
+    width: 70%;
+  }
 
-    .presentation .img-card.img-vertical {
-        width: 70%;
-    }
-
-    .content-box-detail article.nav-web {
-        width: 100%;
-
-    }
-
+  .content-box-detail article.nav-web {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
-    .container-section,
-    .container {
-        width: 80%;
+  .container-section,
+  .container {
+    width: 80%;
+  }
 
-    }
+  .container.last {
+    width: 50%;
+  }
 
-    .container.last {
-        width: 50%;
-    }
+  .card,
+  .footer {
+    flex-direction: row;
+    height: 100%;
+  }
 
-    .card,
-    .footer {
-        flex-direction: row;
-        height: 100%;
-    }
+  .card .content {
+    gap: 2rem;
+  }
 
-    .card .content {
-        gap: 2rem;
-    }
+  #view-viana .flex {
+    gap: 8rem;
+  }
 
-    #view-viana .flex {
-        gap: 8rem;
-    }
+  #view-viana .slogan h1 {
+    font-size: 7rem;
+  }
 
-    #view-viana .slogan h1 {
-        font-size: 7rem;
-    }
+  .category h1 {
+    font-size: 6rem;
+  }
 
-    .category h1 {
-        font-size: 6rem;
-    }
+  .content-section h2 {
+    font-size: 3rem;
+  }
 
-    .content-section h2 {
-        font-size: 3rem;
-    }
+  #view-viana .slogan p {
+    font-size: 3rem;
+  }
 
-
-    #view-viana .slogan p {
-        font-size: 3rem;
-    }
-
-    .content-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .content-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1200px) {
-    .container-section,
-    .container {
-        width: 70%;
-    }
+  .container-section,
+  .container {
+    width: 70%;
+  }
 
-    .container.last {
-        width: 30%;
-    }
+  .container.last {
+    width: 30%;
+  }
 
-    .card,
-    .footer {
-        flex-direction: row;
-        height: 100%;
-    }
+  .card,
+  .footer {
+    flex-direction: row;
+    height: 100%;
+  }
 
-    .card .content {
-        gap: 1rem;
-    }
+  .card .content {
+    gap: 1rem;
+  }
 
+  #view-viana .slogan h1 {
+    font-size: 8rem;
+  }
 
-    #view-viana .slogan h1 {
-        font-size: 8rem;
-    }
+  .category h1 {
+    font-size: 6rem;
+  }
 
-    .category h1 {
-        font-size: 6rem;
-    }
+  .content-section h2 {
+    font-size: 3rem;
+  }
 
-    .content-section h2 {
-        font-size: 3rem;
-    }
+  #view-viana .slogan p {
+    font-size: 3rem;
+  }
 
-
-    #view-viana .slogan p {
-        font-size: 3rem;
-    }
-
-    .content-box {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
+  .content-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
