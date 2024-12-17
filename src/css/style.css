@@ -10,6 +10,8 @@
   --custom-grey: #f9f9f9;
   --white: white;
   --onest-sans-serif: "Onest";
+  --v-gold-90: rgba(214, 183, 111, 0.9);
+  --v-red-90: rgba(237, 24, 70, 0.9);
   --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.9);
 }
 
@@ -268,17 +270,6 @@ nav a {
   color: var(--white);
 }
 
-#view-viana {
-/*   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-  url(../img/viana.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  width: 100%;
-  max-width: 100%;
-  min-height: 65rem;
-  color: var(--white); */
-}
 
 #view-viana {
   position: relative;
@@ -371,7 +362,7 @@ nav a {
 .btn .btn-button,
 .btn .btn-discover {
   color: var(--white);
-  background-color: rgba(214, 183, 111, 0.9);
+  background-color: var(--v-red-90);
   border-radius: 25rem;
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
@@ -383,7 +374,7 @@ nav a {
 
 .background-viana-hello-btn:hover,
 .btn .btn-discover:hover {
-  background-color: rgba(237, 24, 70, 0.9);
+  background-color: var(--v-gold-90);
 }
 
 .section-1,
@@ -476,11 +467,11 @@ nav a {
 }
 
 .btn.btn-button {
-  background-color: rgba(214, 183, 111, 1);
+  background-color: var(--v-red-90);
 }
 
 .btn .btn-button:hover {
-  background-color: rgba(237, 24, 70, 0.9);
+  background-color: var(--v-gold);
 }
 
 .category {
