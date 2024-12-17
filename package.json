@@ -1,7 +1,6 @@
 {
   "name": "PAC1",
   "version": "2.0.0",
-  "port": "8080",
   "source": "src/index.html",
   "browserslist": "> 5%, last 3 versions, not dead",
   "engines": {
@@ -26,7 +25,7 @@
     "process": "^0.11.10",
     "rimraf": "^6.0.1",
     "root": "^3.2.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.31.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
