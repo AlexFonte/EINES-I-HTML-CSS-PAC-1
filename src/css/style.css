@@ -209,7 +209,7 @@ nav a {
 /* ##################################### CSS FOOTER ################################### */
 
 .footer {
-  color: var(--v-gold);
+  color: var(--v-red);
   font-size: 1.3rem;
   font-weight: 500;
   display: flex;
@@ -361,8 +361,8 @@ nav a {
 .background-viana-hello-btn,
 .btn .btn-button,
 .btn .btn-discover {
-  color: var(--white);
-  background-color: var(--v-red-90);
+  color: var(--v-red);
+  background-color: var(--v-gold-90);
   border-radius: 25rem;
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
@@ -374,7 +374,8 @@ nav a {
 
 .background-viana-hello-btn:hover,
 .btn .btn-discover:hover {
-  background-color: var(--v-gold-90);
+  background-color: var(--v-red-90);
+  color: var(--v-gold);
 }
 
 .section-1,
@@ -467,11 +468,11 @@ nav a {
 }
 
 .btn.btn-button {
-  background-color: var(--v-red-90);
+  background-color: var(--v-gold);
 }
 
 .btn .btn-button:hover {
-  background-color: var(--v-gold);
+  background-color: var(--v-red-90);
 }
 
 .category {
