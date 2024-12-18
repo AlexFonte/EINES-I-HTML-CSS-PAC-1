@@ -3,169 +3,220 @@
 <include src="common/head.html"></include>
 
 <body>
-<header>
-    <div class="container">
-        <div class="menu">
-            <div class="logo">
-                <a class="logo-img" href="index.html" title="logo viana"></a>
-                <div class="hamburger-icon">
-                    <label for="dropdown">
-                        <i class="fas fa-bars fa-lg gold"></i>
-                        <i class="fas fa-x fa-lg gold"></i>
-                    </label>
-                    <input type="checkbox" id="dropdown">
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html" title="logo viana"><img class="logo-img" src="img/logos/logo-gold.png"
+                            alt="logo"></a>
+                    <div class="hamburger-icon">
+                        <label for="dropdown">
+                            <i class="fas fa-bars fa-lg gold"></i>
+                            <i class="fas fa-x fa-lg gold"></i>
+                        </label>
+                        <input type="checkbox" id="dropdown">
+                    </div>
+                </div>
+                <nav>
+                    <ul class="burger">
+                        <li><a href="./index.html">Portada</a></li>
+                        <li><a href="categoria.html">Categoria</a></li>
+                        <li class="burger-menu-active"><a href="presentacio.html">Presentació</a></li>
+                        <li><a href="enllacos.html">Enllaços</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="view-viana-presentacio">
+            <div class="container flex slogan">
+                <h1 class="arizonia">Viana do Castelo</h1>
+            </div>
+        </section>
+
+        <section class="content-section-presentation">
+            <div class="container-section presentation">
+                <div>
+                    <h2>Una mica de cultura</h2>
                 </div>
             </div>
-            <nav>
-                <ul class="burger">
-                    <li><a href="./index.html">Portada</a></li>
-                    <li><a href="categoria.html">Categoria</a></li>
-                    <li class="burger-menu-active"><a href="presentacio.html">Presentació</a></li>
-                    <li><a href="enllacos.html">Enllaços</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main>
-    <section id="view-viana-presentacio">
-        <div class="container flex slogan">
-            <h1 class="arizonia">Viana do Castelo</h1>
-        </div>
-    </section>
-
-    <section class="content-section-presentation">
-        <div class="container-section presentation">
-            <div>
-                <h2>Una mica de cultura</h2>
-            </div>
-        </div>
-        <div class="content-section">
-            <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article>
-                        <div class="info">
-                            <p>Viana do Castelo és la ciutat atlàntica més al nord de Portugal a la regió del
-                                <b><q><i>Alto Minho</i></q></b>, fundada l'any <b>1258</b>.</p>
-                            <p>Segons la llegenda de la ciutat, el seu nom va sorgir d'un crit d'alegria d'un cavaller
-                                enamorat d'una bella princesa que es deia Ana. Després d'una llarga espera i en veure la
-                                princesa al balcó del castell, el cavaller no va poder resistir-se a cridar fort <i><q>VI
-                                    A
-                                    ANA! VI A ANA DO CASTELO!</q></i> repetint una vegada darrere l'altra, tornant-se
-                                així
-                                <b>Viana do Castelo</b> el nom de la ciutat.</p>
+            <div class="content-section">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <div class="stars">
+                            <svg id="s1" width="200" height="200" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg" fill="gold">
+                                <polygon points="100,10 40,180 190,60 10,60 160,180" fill="gold" />
+                            </svg>
+                            <svg id="s2" width="200" height="200" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg" fill="gold">
+                                <polygon points="100,10 40,180 190,60 10,60 160,180" fill="gold" />
+                            </svg>
+                            <svg id="s3" width="200" height="200" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg" fill="gold">
+                                <polygon points="100,10 40,180 190,60 10,60 160,180" fill="gold" />
+                            </svg>
                         </div>
-                    </article>
+                        <article>
+
+                            <div class="info">
+                                <p>Viana do Castelo és la ciutat atlàntica més al nord de Portugal a la regió del
+                                    <b><q><i>Alto Minho</i></q></b>, fundada l'any <b>1258</b>.
+                                </p>
+                                <p>Segons la llegenda de la ciutat, el seu nom va sorgir d'un crit d'alegria d'un
+                                    cavaller
+                                    enamorat d'una bella princesa que es deia Ana. Després d'una llarga espera i en
+                                    veure la
+                                    princesa al balcó del castell, el cavaller no va poder resistir-se a cridar fort
+                                    <i><q>VI
+                                            A
+                                            ANA! VI A ANA DO CASTELO!</q></i> repetint una vegada darrere l'altra,
+                                    tornant-se
+                                    així
+                                    <b>Viana do Castelo</b> el nom de la ciutat.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-section even">
-            <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article class="article-detail-two flex-col-reverse">
-                        <img class="img-card hvr-grow" src="img/mapa.jpg" alt="Viana" width="600" height="400">
-                        <div class="info">
-                            <p>No va a ser fins a l'any <b>1848</b>, que la reina Maria II li va otorgar el títol de
-                                ciutat a Viana. La seva història, que ha estat lligada al mar des de sempre, relata un
-                                seguit de sucesos que portaren a Viana a tenir un dels ports més comerciants del país.
-                            </p>
-                        </div>
-                    </article>
+            <div class="content-section even">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <article class="article-detail-two flex-col-reverse">
+                            <img class="img-card hvr-grow" src="img/mapa.jpg" alt="Viana" width="600" height="400">
+                            <div class="info">
+                                <p>No va a ser fins a l'any <b>1848</b>, que la reina Maria II li va otorgar el títol de
+                                    ciutat a Viana. La seva història, que ha estat lligada al mar des de sempre, relata
+                                    un
+                                    seguit de sucesos que portaren a Viana a tenir un dels ports més comerciants del
+                                    país.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-section ">
-            <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article class="article-detail-two">
-                        <div class="info paragraph">
-                            <p>Viana do Castelo és coneguda pel seu ric patrimoni cultural. A més, combina la bellesa
-                                natural amb una identitat vibrant que es manifesta en les seves tradicions, gastronomia
-                                i
-                                artesania.</p>
-                            <p>La ciutat és famosa per la seva filigrana d’or, una artesania delicada que transforma
-                                fils d’or en joies úniques; un orgull local i està present a les celebracions tradicionals. Aquestes festes, com la <b><i><q>Festa de Nossa Senhora da Agonia</q></i></b>,
-                                són un reflex de la cultura viva de Viana, amb música, danses i vestits tradicionals.
-                            </p>
-                        </div>
-                        <img class="img-card hvr-grow img-vertical" src="img/coracao.jpg"
-                             alt="Filigrana Cor de Viana" width="600" height="400">
-                    </article>
+            <div class="content-section ">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <article class="article-detail-two">
+                            <div class="info paragraph">
+                                <p>Viana do Castelo és coneguda pel seu ric patrimoni cultural. A més, combina la
+                                    bellesa
+                                    natural amb una identitat vibrant que es manifesta en les seves tradicions,
+                                    gastronomia
+                                    i
+                                    artesania.</p>
+                                <p>La ciutat és famosa per la seva filigrana d’or, una artesania delicada que transforma
+                                    fils d’or en joies úniques; un orgull local i està present a les celebracions
+                                    tradicionals. Aquestes festes, com la <b><i><q>Festa de Nossa Senhora da
+                                                Agonia</q></i></b>,
+                                    són un reflex de la cultura viva de Viana, amb música, danses i vestits
+                                    tradicionals.
+                                </p>
+                                <div class="heart">
+                <!--                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="gold" d="M17.516 3c2.382 0 4.487 1.564 4.487 4.712 0 4.963-6.528 8.297-10.003 11.935-3.475-3.638-10.002-6.971-10.002-11.934 0-3.055 2.008-4.713 4.487-4.713 3.18 0 4.846 3.644 5.515 5.312.667-1.666 2.333-5.312 5.516-5.312zm0-2c-2.174 0-4.346 1.062-5.516 3.419-1.17-2.357-3.342-3.419-5.515-3.419-3.403 0-6.484 2.39-6.484 6.689 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-4.586-3.414-6.689-6.484-6.689z" />
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="gold">
+                                        <path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <img class="img-card hvr-grow img-vertical" src="img/coracao.jpg"
+                                alt="Filigrana Cor de Viana" width="600" height="400">
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-section even">
-            <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article class="article-detail-two">
-                        <img class="img-card hvr-grow" src="img/bacalhau.jpg"
-                             alt="Filigrana Cor de Viana" width="600" height="400">
+            <div class="content-section even">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <article class="article-detail-two">
+                            <img class="img-card hvr-grow" src="img/bacalhau.jpg" alt="Filigrana Cor de Viana"
+                                width="600" height="400">
 
-                        <div class="info paragraph">
-                            <p>A més, Viana do Castelo ofereix una experiència gastronòmica que no pots perdre. Entre
-                                els plats típics, destaca el <b>bacallà a la moda de Viana</b>, preparat amb
-                                ingredients autèntics de la regió.
-                                Acompanya aquest àpat amb un <b>vi verd</b> local, fresc i lleuger de la regió del Minho, és la manera perfecta de gaudir dels sabors autèntics de la ciutat.
-                                I que no falti mai els petits dolços de la ciutat, com la <b>torta de Viana</b> o les <b>boles de Berlín</b>.</p>
-                        </div>
-                    </article>
+                            <div class="info paragraph">
+                                <p>A més, Viana do Castelo ofereix una experiència gastronòmica que no pots perdre.
+                                    Entre
+                                    els plats típics, destaca el <b>bacallà a la moda de Viana</b>, preparat amb
+                                    ingredients autèntics de la regió.
+                                    Acompanya aquest àpat amb un <b>vi verd</b> local, fresc i lleuger de la regió del
+                                    Minho, és la manera perfecta de gaudir dels sabors autèntics de la ciutat.
+                                    I que no falti mai els petits dolços de la ciutat, com la <b>torta de Viana</b> o
+                                    les <b>boles de Berlín</b>.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-section">
-            <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article class="article-detail-two">
-                        <div class="info">
-                            <h3 class="arizonia">Descobreix Viana do Castelo, on la cultura, l’artesania, la gastronomia
-                                i
-                                els sabors de la terra es fonen per oferir una experiència inoblidable.</h3>
-                        </div>
-                        <iframe class="video" width="560" height="315"
+            <div class="content-section">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <article class="article-detail-two">
+                            <div class="info">
+                                <h3 class="arizonia">Descobreix Viana do Castelo, on la cultura, l’artesania, la
+                                    gastronomia
+                                    i
+                                    els sabors de la terra es fonen per oferir una experiència inoblidable.</h3>
+                            </div>
+                            <iframe class="video" width="560" height="315"
                                 src="https://www.youtube.com/embed/0P0t5-0biC0?si=NL0PFjUgCSkf8nSz"
                                 title="YouTube video player"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </article>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="content-section-presentation even">
-        <div class="container-section presentation">
-            <div>
-                <h2 class="">Navegació de la Web</h2>
-            </div>
-        </div>
-        <div class="content-section">
+        <section class="content-section-presentation even">
             <div class="container-section presentation">
-                <div class="content-box-detail">
-                    <article class="nav-web hvr-grow">
-                        <div class="info list">
-                            <p>La web consta de la següent estructura</p>
-                            <div class="">
-                                <ul class="">
-                                    <li><b>La portada:</b> és la pàgina principal de la web. Des d'aquest punt podrem navegar a qualsevol lloc de la web, ja sigui per anar a <b>Categoria</b>, <b>Prensetació</b> o <b>Enllaços</b>.</li>
-                                    <li><b>Categoria:</b> és la pàgina on trobarem un llistat amb diferents temàtiques i punts d'interès. Cada un dels punts d'interès té el seu propi detall, que accedirem, picant sobre ell.</li>
-                                    <li><b>Presentació:</b> és la pàgina en la qual ens trobem ara. Aquesta pàgina et donarà un mica de context sobre <b><q>Viana do Castelo</q></b> així com saber navegar per la web, a part d'utilitzar el menú.</li>
-                                    <li><b>Enllaços:</b> en aquesta pàgina trobaràs tots els enllaços d'informació així com els enllaços de les imatges. <strong>tingues en compte que totes les imatges s'utilitzen només amb fins acadèmics.</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
+                <div>
+                    <h2 class="">Navegació de la Web</h2>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-<include src="common/footer.html"></include>
+            <div class="content-section">
+                <div class="container-section presentation">
+                    <div class="content-box-detail">
+                        <article class="nav-web hvr-grow">
+                            <div class="info list">
+                                <p>La web consta de la següent estructura</p>
+                                <div class="">
+                                    <ul class="">
+                                        <li><b>La portada:</b> és la pàgina principal de la web. Des d'aquest punt
+                                            podrem navegar a qualsevol lloc de la web, ja sigui per anar a
+                                            <b>Categoria</b>, <b>Prensetació</b> o <b>Enllaços</b>.
+                                        </li>
+                                        <li><b>Categoria:</b> és la pàgina on trobarem un llistat amb diferents
+                                            temàtiques i punts d'interès. Cada un dels punts d'interès té el seu propi
+                                            detall, que accedirem, picant sobre ell.</li>
+                                        <li><b>Presentació:</b> és la pàgina en la qual ens trobem ara. Aquesta pàgina
+                                            et donarà un mica de context sobre <b><q>Viana do Castelo</q></b> així com
+                                            saber navegar per la web, a part d'utilitzar el menú.</li>
+                                        <li><b>Enllaços:</b> en aquesta pàgina trobaràs tots els enllaços d'informació
+                                            així com els enllaços de les imatges. <strong>tingues en compte que totes
+                                                les imatges s'utilitzen només amb fins acadèmics.</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <include src="common/footer.html"></include>
 
 </body>
+
 </html>
