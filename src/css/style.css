@@ -585,7 +585,7 @@ table .images img,
 
 .article-detail-two .img-card,
 .article-detail-two .info {
-  max-width: 100%;
+  max-width: 60rem;
   width: 46%;
   height: auto;
 }
@@ -1002,6 +1002,11 @@ thead th:nth-child(5) {
     width: 90%;
   }
 
+  .presentation .content-box-detail article {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   .article-detail-two .img-card,
   .article-detail-two .info,
   .article-detail-tree .img-card,
@@ -1009,12 +1014,19 @@ thead th:nth-child(5) {
     width: 100%;
   }
 
+  .presentation .article-detail-two .img-card,
+  .presentation .article-detail-two .info,
+  .presentation .article-detail-tree .img-card,
+  .presentation .article-detail-tree .info {
+    width: 46%;
+  }
+
   .article-detail-two.flex-col-reverse {
     flex-direction: column-reverse;
   }
 
   .presentation .video {
-    max-width: 100%;
+    max-width: 46%;
     width: 100%;
   }
 
