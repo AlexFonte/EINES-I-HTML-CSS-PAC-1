@@ -744,13 +744,13 @@ thead th:nth-child(5) {
   fill: var(--v-gold);
 }
 
-.stars svg {
+/* .stars svg {
   animation: zoomIn 2s linear;
 }
 
 .heart svg {
   animation: heartbeat 1.5s ease-in-out infinite both;
-}
+} */
 
 /*####################### RESPONSIVES #################################*/
 @media (max-width: 600px) {
