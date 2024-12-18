@@ -732,11 +732,11 @@ thead th:nth-child(5) {
   height: auto;
 }
 
-.heart svg,
-.stars svg {
-  width: 10rem;
-  height: 10rem;
-}
+  .heart svg,
+  .stars svg {
+    width: 10rem;
+    height: 10rem;
+  }
 
 .heart svg,
 .stars svg,
