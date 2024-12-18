@@ -1168,8 +1168,3 @@ thead th:nth-child(5) {
     transform: translateX(0);
   }
 }
-
-/* 
-svg path {
-  fill: blue; 
-} */
