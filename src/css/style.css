@@ -736,7 +736,6 @@ thead th:nth-child(5) {
 .stars svg {
   width: 10rem;
   height: 10rem;
-  animation: blink 2s linear;
 }
 
 .heart svg,
