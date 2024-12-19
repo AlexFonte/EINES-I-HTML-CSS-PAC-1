@@ -496,6 +496,10 @@ nav a {
   justify-content: space-evenly;
   align-items: stretch;
   padding: 3rem 0;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+
 }
 
 .content-section h2 {
@@ -507,6 +511,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  justify-content: center;
 }
 
 .card-category {
@@ -514,6 +519,7 @@ nav a {
   border-radius: 10px;
   border: 2px solid var(--v-gold);
   background-color: var(--custom-white);
+  max-width: 30rem;
 }
 
 .card-category .img-card {
@@ -521,6 +527,7 @@ nav a {
   height: auto;
   object-fit: cover;
   aspect-ratio: 600/400;
+  max-width: 30rem;
 }
 
 .card-category a {
@@ -856,6 +863,7 @@ thead th:nth-child(5) {
 
   .content-box {
     grid-template-columns: repeat(1, 1fr);
+    width: 90%;
   }
 
   .content-box-detail article {
@@ -868,7 +876,7 @@ thead th:nth-child(5) {
   .article-detail-two .info,
   .article-detail-tree .img-card,
   .article-detail-tree .info {
-    width: 100%;
+    width: 80%;
   }
 
   .article-detail-two.flex-col-reverse {
@@ -876,12 +884,12 @@ thead th:nth-child(5) {
   }
 
   .presentation .img-card.img-vertical {
-    width: 90%;
+    width: 80%;
   }
 
   .presentation .video {
-    max-width: 100%;
-    width: 90%;
+    max-width: 80%;
+    width: 80%;
     height: auto;
   }
 
@@ -994,6 +1002,7 @@ thead th:nth-child(5) {
 
   .content-box {
     grid-template-columns: repeat(2, 1fr);
+    width: 90%;
   }
 
   .content-box-detail article {
