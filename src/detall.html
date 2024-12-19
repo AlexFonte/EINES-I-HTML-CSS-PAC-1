@@ -124,9 +124,11 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/gil-eannes.jpg"
-                                        alt="Imatge d'un buque de guerra que s'ha convertit a hospital." width="600"
-                                        height="400">
+                                    <img class="img-card" id="img2"
+                                    srcset="img/webp/gil-eannes/300w.webp 1x, img/webp/gil-eannes/600w.webp 1.5x, img/webp/gil-eannes/900w.webp 2x"
+                                    src="img/gil-eannes.jpg"
+                                    alt="Imatge d'un buque de guerra que s'ha convertit a hospital." width="600"
+                                    height="400">
                                     <figcaption>
                                         <h3>Barco hospital Gil Eannes</h3>
                                     </figcaption>
@@ -136,8 +138,9 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/ponte-eiffel.jpg" alt="Imatge d'un pont" width="600"
-                                        height="400">
+                                    <img class="img-card" id="img3"
+                                        srcset="img/webp/ponte-eiffel/300w.webp 1x, img/webp/ponte-eiffel/600w.webp 1.5x, img/webp/ponte-eiffel/900w.webp 2x"
+                                        src="img/ponte-eiffel.jpg" alt="Imatge d'un pont" width="600" height="400">
                                     <figcaption>
                                         <h3>Ponte Eiffel</h3>
                                     </figcaption>
@@ -147,8 +150,9 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/viana-avenida.jpg" alt="Avinguda de la Ciutat"
-                                        width="600" height="400">
+                                    <img class="img-card" id="img4"
+                                        srcset="img/webp/viana-avenida/300w.webp 1x, img/webp/viana-avenida/600w.webp 1.5x, img/webp/viana-avenida/900w.webp 2x"
+                                        src="img/viana-avenida.jpg" alt="Avinguda de la Ciutat" width="600" height="400">
                                     <figcaption>
                                         <h3>Viana do Castelo Ciutat</h3>
                                     </figcaption>
@@ -158,8 +162,10 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/museu-traje.webp" alt="Museu de Trajes tradicionales"
-                                        width="600" height="400">
+                                    <img class="img-card" id="img5"
+                                        srcset="img/webp/museu-traje/300w.webp 1x, img/webp/museu-traje/600w.webp 1.5x, img/webp/museu-traje/900w.webp 2x"
+                                        src="img/museu-traje.webp" alt="Museu de Trajes tradicionales" width="600"
+                                        height="400">
                                     <figcaption>
                                         <h3>Museu de tratges tradicionals</h3>
                                     </figcaption>
@@ -169,8 +175,9 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/estacao.jpg" alt="Estacio de tren" width="600"
-                                        height="400">
+                                    <img class="img-card" id="img6"
+                                        srcset="img/webp/estacao/300w.webp 1x, img/webp/estacao/600w.webp 1.5x, img/webp/estacao/900w.webp 2x"
+                                        src="img/estacao.jpg" alt="Estacio de tren" width="600" height="400">
                                     <figcaption>
                                         <h3>Estació de tren</h3>
                                     </figcaption>
@@ -180,8 +187,9 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/praia-cabedelo.webp" alt="Platja de la Ciutat"
-                                        width="600" height="400">
+                                    <img class="img-card" id="img7"
+                                        srcset="img/webp/praia-cabedelo/300w.webp 1x, img/webp/praia-cabedelo/600w.webp 1.5x, img/webp/praia-cabedelo/900w.webp 2x"
+                                        src="img/praia-cabedelo.webp" alt="Platja de la Ciutat" width="600" height="400">
                                     <figcaption>
                                         <h3>Platja de la Ciutat</h3>
                                     </figcaption>
@@ -191,8 +199,9 @@
                         <article class="card-category hvr-grow">
                             <a>
                                 <figure>
-                                    <img class="img-card" src="img/ponte-lima.jpg" alt="Vila Ponte de Lima" width="600"
-                                        height="400">
+                                    <img class="img-card" id="img8"
+                                        srcset="img/webp/ponte-lima/300w.webp 1x, img/webp/ponte-lima/600w.webp 1.5x, img/webp/ponte-lima/900w.webp 2x"
+                                        src="img/ponte-lima.jpg" alt="Vila Ponte de Lima" width="600" height="400">
                                     <figcaption>
                                         <h3>Vila Ponte de Lima</h3>
                                     </figcaption>
@@ -207,6 +216,15 @@
 
     <!--Add footer-->
     <include src="common/footer.html"></include>
+
+    <script>
+        const img = document.getElementById("img8");
+        const fileName = img.currentSrc?.substring(
+            img.currentSrc.lastIndexOf("/"),
+        );
+        alert(`Loaded img8: ${fileName}`);
+
+    </script>
     <!-- Add Scripts -->
 </body>
 
