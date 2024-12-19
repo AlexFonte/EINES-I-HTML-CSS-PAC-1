@@ -3,237 +3,258 @@
 <include src="common/head.html"></include>
 
 <body>
-<header>
-    <div class="container">
-        <div class="menu">
-            <div class="logo">
-                <a href="index.html" title="logo viana"><img class="logo-img" src="img/logos/logo-gold.png" alt="logo"></a>
-                <div class="hamburger-icon">
-                    <label for="dropdown">
-                        <i class="fas fa-bars fa-lg gold"></i>
-                        <i class="fas fa-x fa-lg gold"></i>
-                    </label>
-                    <input type="checkbox" id="dropdown"/>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html" title="logo viana"><img class="logo-img" src="img/logos/logo-gold.png"
+                            alt="logo"></a>
+                    <div class="hamburger-icon">
+                        <label for="dropdown">
+                            <i class="fas fa-bars fa-lg gold"></i>
+                            <i class="fas fa-x fa-lg gold"></i>
+                        </label>
+                        <input type="checkbox" id="dropdown" />
+                    </div>
+                </div>
+                <nav>
+                    <ul class="burger">
+                        <li><a href="index.html">Portada</a></li>
+                        <li class="burger-menu-active"><a href="categoria.html">Categoria</a></li>
+                        <li><a href="presentacio.html">Presentació</a></li>
+                        <li><a href="enllacos.html">Enllaços</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class=" category">
+        <section id="view-viana-category">
+            <div class="container flex slogan">
+                <h1 class="arizonia">Descobreix lo millor que<br>Viana do Castelo té per oferir:</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container-section">
+                <div>
+                    <h2>Llocs Turístics</h2>
+                </div>
+                <div class="content-box">
+                    <article class="card-category hvr-grow">
+                        <a href="detall.html">
+                            <figure>
+                                <img class="img-card" id="img1"
+                                    srcset="img/webp/santa-luzia-12/300w.webp 1x, img/webp/santa-luzia-12/600w.webp 1.5x, img/webp/santa-luzia-12/900w.webp 2x"
+                                    src="img/santa-luzia-12.jpg" alt="Imatge del Santuari de Santa Luzia" width="600"
+                                    height="400">
+                                <figcaption>
+                                    <h3>Santuari de Santa Luzia</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img2"
+                                    srcset="img/webp/gil-eannes/300w.webp 1x, img/webp/gil-eannes/600w.webp 1.5x, img/webp/gil-eannes/900w.webp 2x"
+                                    src="img/gil-eannes.jpg"
+                                    alt="Imatge d'un buque de guerra que s'ha convertit a hospital." width="600"
+                                    height="400">
+                                <figcaption>
+                                    <h3>Barco hospital Gil Eannes</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img3"
+                                    srcset="img/webp/ponte-eiffel/300w.webp 1x, img/webp/ponte-eiffel/600w.webp 1.5x, img/webp/ponte-eiffel/900w.webp 2x"
+                                    src="img/ponte-eiffel.jpg" alt="Imatge d'un pont" width="600" height="400">
+                                <figcaption>
+                                    <h3>Ponte Eiffel</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img4"
+                                    srcset="img/webp/viana-avenida/300w.webp 1x, img/webp/viana-avenida/600w.webp 1.5x, img/webp/viana-avenida/900w.webp 2x"
+                                    src="img/viana-avenida.jpg" alt="Avinguda de la Ciutat" width="600" height="400">
+                                <figcaption>
+                                    <h3>Viana do Castelo Ciutat</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+
+                                <img class="img-card" id="img5"
+                                    srcset="img/webp/museu-traje/300w.webp 1x, img/webp/museu-traje/600w.webp 1.5x, img/webp/museu-traje/900w.webp 2x"
+                                    src="img/museu-traje.webp" alt="Museu de Trajes tradicionales" width="600"
+                                    height="400">
+                                <figcaption>
+                                    <h3>Museu de tratges tradicionals</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img6"
+                                    srcset="img/webp/estacao/300w.webp 1x, img/webp/estacao/600w.webp 1.5x, img/webp/estacao/900w.webp 2x"
+                                    src="img/estacao.jpg" alt="Estacio de tren" width="600" height="400">
+                                <figcaption>
+                                    <h3>Estació de tren</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img7"
+                                    srcset="img/webp/praia-cabedelo/300w.webp 1x, img/webp/praia-cabedelo/600w.webp 1.5x, img/webp/praia-cabedelo/900w.webp 2x"
+                                    src="img/praia-cabedelo.webp" alt="Platja de la Ciutat" width="600" height="400">
+                                <figcaption>
+                                    <h3>Platja de la Ciutat</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img8"
+                                    srcset="img/webp/ponte-lima/300w.webp 1x, img/webp/ponte-lima/600w.webp 1.5x, img/webp/ponte-lima/900w.webp 2x"
+                                    src="img/ponte-lima.jpg" alt="Vila Ponte de Lima" width="600" height="400">
+                                <figcaption>
+                                    <h3>Vila Ponte de Lima</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
                 </div>
             </div>
-            <nav>
-                <ul class="burger">
-                    <li><a href="index.html">Portada</a></li>
-                    <li class="burger-menu-active"><a href="categoria.html">Categoria</a></li>
-                    <li><a href="presentacio.html">Presentació</a></li>
-                    <li><a href="enllacos.html">Enllaços</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+        </section>
 
-<main class=" category">
-    <section id="view-viana-category">
-        <div class="container flex slogan">
-            <h1 class="arizonia">Descobreix lo millor que<br>Viana do Castelo té per oferir:</h1>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <div class="container-section">
-            <div>
-                <h2>Llocs Turístics</h2>
+        <section class="content-section even">
+            <div class="container-section">
+                <div>
+                    <h2>Gastronomia</h2>
+                </div>
+                <div class="content-box">
+                    <article class="card-category hvr-grow">
+                        <a href="detall.html">
+                            <figure>
+                                <img class="img-card" id="img9"
+                                    srcset="img/webp/bacalhau/300w.webp 1x, img/webp/bacalhau/600w.webp 1.5x, img/webp/bacalhau/900w.webp 2x"
+                                    src="img/bacalhau.jpg" alt="Bacallà a l'estil de Viana" width="600" height="400">
+                                <figcaption>
+                                    <h3>Bacallà a l'estil de Viana</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a href="detall.html">
+                            <figure>
+                                <img class="img-card" id="img10"
+                                    srcset="img/webp/sarrabulho/300w.webp 1x, img/webp/sarrabulho/600w.webp 1.5x, img/webp/sarrabulho/900w.webp 2x"
+                                    src="img/sarrabulho.jpg" alt="Plat d'arroz tipic" width="600" height="400">
+                                <figcaption>
+                                    <h3>Arròs de <q>sarrabulho</q></h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" imd="img11"
+                                    srcset="img/webp/torta/300w.webp 1x, img/webp/torta/600w.webp 1.5x, img/webp/torta/900w.webp 2x"
+                                    src="img/torta.webp" alt="Torta de Viana" width="600" height="400">
+                                <figcaption>
+                                    <h3>Torta de Viana</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img12"
+                                    srcset="img/webp/meia-luas/300w.webp 1x, img/webp/meia-luas/600w.webp 1.5x, img/webp/meia-luas/900w.webp 2x"
+                                    src="img/meia-luas.jpg" alt="Postre tipic de Viana " width="600" height="400">
+                                <figcaption>
+                                    <h3>Mitjes llunes de Viana</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="card-category hvr-grow">
+                        <a>
+                            <figure>
+                                <img class="img-card" id="img13" 
+                                srcset="img/webp/bolas-berlim/300w.webp 1x, img/webp/bolas-berlim/600w.webp 1.5x, img/webp/bolas-berlim/900w.webp 2x"
+                                src="img/bolas-berlim-1.jpg" alt="Postre tipic de Viana"
+                                    width="600" height="400">
+                                <figcaption>
+                                    <h3>Boles de Berlin</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
             </div>
-            <div class="content-box">
-                <article class="card-category hvr-grow">
-                    <a href="detall.html">
-                        <figure>
-                            <img class="img-card" src="img/santa-luzia-12.jpg" alt="Imatge del Santuari de Santa Luzia"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Santuari de Santa Luzia</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/gil-eannes.jpg"
-                                 alt="Imatge d'un buque de guerra que s'ha convertit a hospital."
-                                 width="600" height="400">
-                            <figcaption>
-                                <h3>Barco hospital Gil Eannes</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/ponte-eiffel.jpg" alt="Imatge d'un pont"
-                                 width="600" height="400">
-                            <figcaption>
-                                <h3>Ponte Eiffel</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/viana-avenida.jpg" alt="Avinguda de la Ciutat"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Viana do Castelo Ciutat</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/museu-traje.webp" alt="Museu de Trajes tradicionales"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Museu de tratges tradicionals</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/estacao.jpg" alt="Estacio de tren"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Estació de tren</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/praia-cabedelo.webp" alt="Platja de la Ciutat"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Platja de la Ciutat</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
+        </section>
 
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/ponte-lima.jpg" alt="Vila Ponte de Lima"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Vila Ponte de Lima</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
+        <section class="content-section">
+            <div class="container-section">
+                <div>
+                    <h2>Festes</h2>
+                </div>
+                <div class="content-box">
+                    <article class="card-category hvr-grow">
+                        <a href="detall.html">
+                            <figure>
+                                <img class="img-card" id="img14" 
+                                srcset="img/webp/festas/300w.webp 1x, img/webp/festas/600w.webp 1.5x, img/webp/festas/900w.webp 2x"
+                                src="img/festas-3.jpg" alt="Romaria da Sra. da Agonia" width="600"
+                                    height="400">
+                                <figcaption>
+                                    <h3>Romaria da Sra. da Agonia</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="content-section even">
-        <div class="container-section">
-            <div>
-                <h2>Gastronomia</h2>
-            </div>
-            <div class="content-box">
-                <article class="card-category hvr-grow">
-                    <a href="detall.html">
-                        <figure>
-                            <img class="img-card" src="img/bacalhau.jpg" alt="Bacallà a l'estil de Viana"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Bacallà a l'estil de Viana</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a href="detall.html">
-                        <figure>
-                            <img class="img-card" src="img/sarrabulho.jpg" alt="Plat d'arroz tipic"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Arròs de <q>sarrabulho</q></h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/torta.webp"
-                                 alt="Torta de Viana"
-                                 width="600" height="400">
-                            <figcaption>
-                                <h3>Torta de Viana</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/meia-luas.jpg" alt="Postre tipic de Viana "
-                                 width="600" height="400">
-                            <figcaption>
-                                <h3>Mitjes llunes de Viana</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="card-category hvr-grow">
-                    <a>
-                        <figure>
-                            <img class="img-card" src="img/bolas-berlim-1.jpg" alt="Postre tipic de Viana"
-                                 width="600"
-                                 height="400">
-                            <figcaption>
-                                <h3>Boles de Berlin</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-            </div>
-        </div>
-    </section>
+    <include src="common/footer.html"></include>
+    <!-- Add Scripts -->
 
-    <section class="content-section">
-        <div class="container-section">
-        <div>
-            <h2>Festes</h2>
-        </div>
-        <div class="content-box">
-            <article class="card-category hvr-grow">
-                <a href="detall.html">
-                    <figure>
-                        <img class="img-card" src="img/festas-3.jpg" alt="Romaria da Sra. da Agonia"
-                             width="600"
-                             height="400">
-                        <figcaption>
-                            <h3>Romaria da Sra. da Agonia</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
-        </div>
-    </div>
-    </section>
-</main>
 
-<include src="common/footer.html"></include>
-<!-- Add Scripts -->
+    <script>
+        const img = document.getElementById("img14");
+        const fileName = img.currentSrc?.substring(
+            img.currentSrc.lastIndexOf("/"),
+        );
+        alert(`Loaded img14: ${fileName}`);
+
+    </script>
 </body>
+
 </html>
