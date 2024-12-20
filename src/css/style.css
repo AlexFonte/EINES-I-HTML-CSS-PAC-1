@@ -90,6 +90,10 @@ q {
   align-content: center;
 }
 
+.container-section.presentation{
+  padding-bottom: 0;
+}
+
 .container.last {
   width: 100%;
   height: 100%;
@@ -781,7 +785,7 @@ thead th:nth-child(5) {
 }
 
 .stars svg {
-  animation: zoomIn 2s linear;
+  animation: zoomIn 1.5s linear;
 }
 
 .heart svg {
@@ -1331,5 +1335,23 @@ thead th:nth-child(5) {
 
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.animation-expand-letters {
+	animation: expand-letters 1.5s ease-in-out;
+}
+
+@keyframes expand-letters {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
