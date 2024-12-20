@@ -85,13 +85,13 @@
             <div class="content-section even">
                 <div class="container-section presentation">
                     <div class="content-box-detail">
-                        <article class="article-detail-two-picture flex-col-reverse">
-                            <picture class="img-picture"><!-- Direction de arte. -->
-                                <source media="(max-width: 600px)" srcset="img/mapa-320w.webp" type="image/webp">
-                                <source media="(max-width: 991px)" srcset="img/mapa-650w.webp" type="image/webp">
-                                <source media="(min-width: 992px)" srcset="img/mapa-1200w.webp" type="image/webp">
-                                <img src="img/mapa.jpg" alt="Mapa Viana do Castelo" width="600" height="400" class="img-card hvr-grow">
-                            </picture>
+                        <article class="article-detail-two flex-col-reverse">
+             
+                            <img 
+                            srcset="img/mapa-300w.jpg 300w, 
+                            img/mapa-500w.jpg 500w"
+                            sizes="(max-width: 320px) 300px, 500px"
+                            src="img/mapa.jpg" alt="Mapa Viana do Castelo" width="600" height="400" class="img-card zoom-in">
                             <div class="info">
                                 <p>No va a ser fins a l'any <b>1848</b>, que la reina Maria II li va otorgar el títol de
                                     ciutat a Viana. La seva història, que ha estat lligada al mar des de sempre, relata
@@ -134,7 +134,7 @@
                                 <source media="(max-width: 600px)" srcset="img/coracao-portrait-460.webp" type="image/webp">
                                 <source media="(max-width: 991px)" srcset="img/coracao-portrait-750.webp" type="image/webp">
                                 <source media="(min-width: 992px)" srcset="img/coracao-1200w.webp">
-                                <img src="img/coracao.jpg" alt="Filigrana Cor de Viana" width="600" height="400" class="img-card img-vertical hvr-grow">
+                                <img src="img/coracao.jpg" alt="Filigrana Cor de Viana" width="600" height="400" class="img-card img-vertical zoom-in">
                             </picture>
                         </article>
                     </div>
@@ -144,13 +144,12 @@
             <div class="content-section even">
                 <div class="container-section presentation">
                     <div class="content-box-detail">
-                        <article class="article-detail-two-picture">
-                                <picture class="img-picture"><!-- Direction de arte. -->
-                                    <source media="(max-width: 600px)" srcset="img/bacalhau-portrait-850w.webp" type="image/webp">
-                                    <source media="(max-width: 991px)" srcset="img/bacalhau-960w.webp" type="image/webp">
-                                    <source media="(min-width: 992px)" srcset="img/bacalhau-1200w.webp">
-                                    <img src="img/bacalhau.jpg" alt="Plat tipic de Viana" width="600" height="400" class="img-card hvr-grow">
-                                </picture>
+                        <article class="article-detail-two">
+                                <!-- tamaño  -->
+                                <img srcset="img/bacalhau-360w.webp 360w, img/bacalhau-520w.webp 520w"
+                                sizes="(max-width: 400px) 360px, 520px" src="img/bacalhau.jpg"
+                                alt="Plat tipic de Viana" width="600" height="400" class="img-card zoom-in">
+                                
                             <div class="info paragraph">
                                 <p>A més, Viana do Castelo ofereix una experiència gastronòmica que no pots perdre.
                                     Entre
@@ -197,7 +196,7 @@
             <div class="content-section">
                 <div class="container-section presentation">
                     <div class="content-box-detail">
-                        <article class="nav-web hvr-grow">
+                        <article class="nav-web zoom-in">
                             <div class="info list">
                                 <p>La web consta de la següent estructura</p>
                                 <div class="">
