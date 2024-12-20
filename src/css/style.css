@@ -615,9 +615,9 @@ table .images img,
   height: auto;
 }
 
-.article-detail-two-picture .img-card{
-    width: 100%;
-    height: auto;
+.article-detail-two-picture .img-card {
+  width: 100%;
+  height: auto;
 }
 
 .content-box-detail .article-detail-tree {
@@ -680,13 +680,19 @@ table .images img,
   gap: 4rem;
 }
 
+.presentation .content-box-detail.img-vertical {
+  width: 100%;
+}
+
 .presentation .img-card.img-vertical {
-  width: 40%;
+  max-width: 30rem;
+  width: 100%;
 }
 
 .info.paragraph {
   display: grid;
   gap: 3rem;
+  width: 46%;
 }
 
 .presentation .video {
@@ -896,7 +902,7 @@ thead th:nth-child(5) {
   }
 
   .article-detail-two-picture .img-picture,
-.article-detail-two-picture .info,
+  .article-detail-two-picture .info,
   .article-detail-two .img-card,
   .article-detail-two .info,
   .article-detail-tree .img-card,
@@ -909,7 +915,7 @@ thead th:nth-child(5) {
   }
 
   .presentation .img-card.img-vertical {
-    width: 80%;
+    width: 90%;
   }
 
   .presentation .video {
@@ -1042,7 +1048,7 @@ thead th:nth-child(5) {
   }
 
   .article-detail-two-picture .img-picture,
-.article-detail-two-picture .info,
+  .article-detail-two-picture .info,
   .article-detail-two .img-card,
   .article-detail-two .info,
   .article-detail-tree .img-card,
@@ -1067,7 +1073,7 @@ thead th:nth-child(5) {
   }
 
   .presentation .img-card.img-vertical {
-    width: 70%;
+    width: 100%;
   }
 
   .content-box-detail article.nav-web {
