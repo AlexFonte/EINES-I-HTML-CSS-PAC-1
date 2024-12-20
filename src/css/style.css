@@ -601,16 +601,23 @@ table .images img:hover,
 }
 
 table .images img,
+.content-box-detail .img-card,
 .content-box-detail .img-card {
   border-radius: 10px;
   overflow: hidden;
 }
-
+.article-detail-two-picture .img-picture,
+.article-detail-two-picture .info,
 .article-detail-two .img-card,
 .article-detail-two .info {
   max-width: 60rem;
   width: 46%;
   height: auto;
+}
+
+.article-detail-two-picture .img-card{
+    width: 100%;
+    height: auto;
 }
 
 .content-box-detail .article-detail-tree {
@@ -888,11 +895,13 @@ thead th:nth-child(5) {
     width: 95%;
   }
 
+  .article-detail-two-picture .img-picture,
+.article-detail-two-picture .info,
   .article-detail-two .img-card,
   .article-detail-two .info,
   .article-detail-tree .img-card,
   .article-detail-tree .info {
-    width: 80%;
+    width: 90%;
   }
 
   .article-detail-two.flex-col-reverse {
@@ -1032,6 +1041,8 @@ thead th:nth-child(5) {
     flex-wrap: nowrap;
   }
 
+  .article-detail-two-picture .img-picture,
+.article-detail-two-picture .info,
   .article-detail-two .img-card,
   .article-detail-two .info,
   .article-detail-tree .img-card,
@@ -1107,6 +1118,16 @@ thead th:nth-child(5) {
   .content-box {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .content-box-detail .important {
+    flex-direction: column;
+  }
+
+  .content-box-detail .important .info,
+  .content-box-detail .important .img-card {
+    max-width: 83.5rem;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1147,6 +1168,16 @@ thead th:nth-child(5) {
 
   .content-box {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .content-box-detail .important {
+    flex-direction: column;
+  }
+
+  .content-box-detail .important .info,
+  .content-box-detail .important .img-card {
+    max-width: 106.5rem;
+    width: 100%;
   }
 }
 

@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section id="view-viana-category-detail">
+        <section id="view-viana-category-detail" class="animation-slide-open">
             <div class="container flex slogan">
                 <h1 class="arizonia">Santuari de Santa Luzia:</h1>
             </div>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="content-box-detail">
-                    <article class="article-detail-two">
+                    <article class="article-detail-two important">
                         <div class="info">
                             <p>El Santuari de Santa Luzia és un dels llocs més emblemàtics de Viana do Castelo i
                                 una destinació
@@ -55,11 +55,24 @@
                                 posta
                                 de sol.</p>
                         </div>
-                        <img class="img-card hvr-grow" src="img/santa-luzia-12.jpg" alt="Viana" width="600"
-                            height="400">
+<!--                         <img class="img-card hvr-grow" src="img/santa-luzia-12.jpg" alt="Viana" width="600"
+                            height="400"> -->
+                            <picture class="img-picture"><!-- Direction de arte. -->
+                                <source media="(max-width: 600px)" srcset="img//santa-luzia-12-600w.jpg?as=webp" type="image/webp">
+                                <source media="(max-width: 991px)" srcset="img//santa-luzia-12-992w.jpg?as=webp" type="image/webp">
+                                <source media="(min-width: 992px)" srcset="img//santa-luzia-12-1200w.jpg">
+                                <img src="img/santa-luzia-12.jpg" alt="Viana" width="600" height="400" class="img-card hvr-grow">
+                            </picture>
                     </article>
-                    <article class="article-detail-two flex-col-reverse">
-                        <img class="img-card hvr-grow" src="img/viana.jpg" alt="Viana" width="600" height="400">
+
+                    <article class="article-detail-two-picture flex-col-reverse">
+                        <!-- <img class="img-card hvr-grow" src="img/viana.jpg" alt="Viana" width="600" height="400"> -->
+                        <picture class="img-picture"><!-- Direction de arte. -->
+                            <source media="(max-width: 600px)" srcset="img/viana-600w.webp" type="image/webp">
+                            <source media="(max-width: 991px)" srcset="img/viana-992w.webp" type="image/webp">
+                            <source media="(min-width: 992px)" srcset="img/viana-1200.jpg">
+                            <img src="img/viana.jpg" alt="Vista panorámica de Viana do Castelo" width="600" height="400" class="img-card hvr-grow">
+                        </picture>
                         <div class="info">
                             <p>L'enorme cúpula que corona el santuari, així com les altres quatre petites, no
                                 passen pas desapercebudes per cap visitant del monument dedicat al Sagrat cor de Jesús.
@@ -72,7 +85,7 @@
                         </div>
                     </article>
 
-                    <article class="article-detail-two">
+                    <article class="article-detail-two-picture">
                         <div class="info list">
                             <p><strong>Informació basica:</strong></p>
                             <ul>
@@ -97,12 +110,23 @@
                                 </li>
                             </ul>
                         </div>
-                        <img class="img-card hvr-grow" src="img/santa-luzia-11.jpg"
-                            alt="Home amb una camara de fotos antigua" width="600" height="400">
+                       <!--  <img class="img-card hvr-grow" src="img/santa-luzia-11.jpg"
+                            alt="Home amb una camara de fotos antigua" width="600" height="400"> -->
+                            <picture class="img-picture"><!-- Direction de arte. --> 
+                                <source media="(max-width: 600px)" srcset="img/santa-luzia-11-600w.jpg?as=webp" type="image/webp">
+                                <source media="(max-width: 991px)" srcset="img/santa-luzia-11-992w.jpg?as=webp" type="image/webp">
+                                <source media="(min-width: 992px)" srcset="img/santa-luzia-11-1200w.jpg">
+                                <img src="img/santa-luzia-11.jpg" alt="Vista panorámica de Viana do Castelo" width="600" height="400" class="img-card hvr-grow">
+                            </picture>
                     </article>
-                    <article class="article-detail-two flex-col-reverse">
-                        <img class="img-card hvr-grow" src="img/hombre-camara.jpg"
-                            alt="Home amb una camara de fotos antigua" width="600" height="400">
+
+                    <article class="article-detail-two-picture flex-col-reverse">
+                            <picture class="img-picture"><!-- Direction de arte. -->
+                                <source media="(max-width: 600px)" srcset="img/hombre-camara-600h.jpg?as=webp" type="image/webp">
+                                <source media="(max-width: 991px)" srcset="img/hombre-camara-992h.jpg?as=webp" type="image/webp">
+                                <source media="(min-width: 992px)" srcset="img/hombre-camara-1200w.jpg">
+                                <img src="img/hombre-camara.jpg" alt="Home amb una camara de fotos antigua" width="600" height="400" class="img-card hvr-grow">
+                            </picture>
                         <div class="info">
                             <p>Els visitants poden accedir a la muntanya amb cotxe, a peu o amb el funicular de Santa
                                 Luzia. Un cop a dalt trobaràs un fotògraf amb el qual podràs fer-te una foto a blanc i
@@ -217,14 +241,14 @@
     <!--Add footer-->
     <include src="common/footer.html"></include>
 
-    <script>
+<!--     <script>
         const img = document.getElementById("img8");
         const fileName = img.currentSrc?.substring(
             img.currentSrc.lastIndexOf("/"),
         );
         alert(`Loaded img8: ${fileName}`);
 
-    </script>
+    </script> -->
     <!-- Add Scripts -->
 </body>
 
