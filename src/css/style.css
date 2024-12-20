@@ -1246,11 +1246,11 @@ thead th:nth-child(5) {
   }
 }
 
-.animation-myAnim {
-  animation: myAnim 2s ease 0s 1 normal forwards;
+.animation-jelly {
+  animation: jelly 2s ease 0s 1 normal forwards;
 }
 
-@keyframes myAnim {
+@keyframes jelly {
   0% {
 		transform: scale3d(1, 1, 1);
 	}
