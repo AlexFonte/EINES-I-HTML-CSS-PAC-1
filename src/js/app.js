@@ -1,10 +1,10 @@
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 
 const name = 'world';
 console.log(`Hello ${name}`);
 
-/* const sweet = Swal.mixin({
+const sweet = Swal.mixin({
     customClass: {
         container: "background-viana-hello",
         popup: "background-viana-hello-popup",
@@ -12,4 +12,4 @@ console.log(`Hello ${name}`);
     }
 });
 
-sweet.fire({title:'Benvingut Viana do Castelo: Una Joia Històrica i Cultural de Portugal'}); */
+sweet.fire({title:'Benvingut Viana do Castelo: Una Joia Històrica i Cultural de Portugal'});
