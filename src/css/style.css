@@ -795,12 +795,13 @@ thead th:nth-child(5) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: auto;
   }
 
-  /*   .logo-img {
-    width: 60%;
-    height: 60%;
-  } */
+  .logo-img {
+    width: 11rem;
+    margin-left: -2.5rem;
+  }
 
   .hamburger-icon {
     display: block;
@@ -938,6 +939,12 @@ thead th:nth-child(5) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: auto;
+  }
+
+  .logo-img {
+    width: 15rem;
+    margin-left: -2.5rem;
   }
 
   .hamburger-icon {
