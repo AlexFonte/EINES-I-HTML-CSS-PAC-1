@@ -1,15 +1,17 @@
 
 :root {
-  --v-gold: #d6b76f;
+  --v-gold: #b89a5e; /*#d6b76f;*/
   --v-red: #ed1846;
   --custom-gray: #f2f2f2;
   --custom-white: #fefefe;
   --custom-grey: #f9f9f9;
   --white: white;
   --onest-sans-serif: "Onest";
-  --v-gold-90: rgba(214, 183, 111, 0.9);
+  /* --v-gold-90: rgba(214, 183, 111, 0.9); */
+  --v-gold-90: rgba(184, 154, 94, 0.9);
   --v-red-90: rgba(237, 24, 70, 0.9);
-  --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.9);
+  /* --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.9); */
+  --box-sadow: 3px 3px 5px rgba(184, 154, 94, 0.9);
 }
 
 .arizonia {
