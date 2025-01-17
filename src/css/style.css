@@ -515,6 +515,7 @@ nav a {
   border: 2px solid var(--v-gold);
   background-color: var(--custom-white);
   max-width: 30rem;
+  background-color: #4a4a4a;
 }
 
 .card-category .img-card {
@@ -533,6 +534,7 @@ nav a {
   width: 95%;
   margin: auto;
   padding: 1rem 0;
+
 }
 
 table .images img:hover,
@@ -795,6 +797,7 @@ thead th:nth-child(5) {
   .footer {
     flex-direction: column;
     height: 100%;
+    font-size: 1.6rem;
   }
 
   .logo {
