@@ -259,13 +259,14 @@ nav a {
 /* ##################################### CSS IMAGEN PRINCIPAL ################################### */
 .background-viana-hello-popup {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/festas-3.jpg);
+    url(../img/festas-3-crop-80.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; /* Alinea la imagen en la parte inferior */
   color: var(--white);
-  width: 50%;
-  min-height: 20rem;
+  width: 40rem;
+  height: 50rem;
+  aspect-ratio: 950/1100;
   align-content: space-around;
   font-family: var(--onest-sans-serif), sans-serif;
   font-size: 1.8rem;
