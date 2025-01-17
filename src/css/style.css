@@ -192,10 +192,15 @@ menu {
   border-bottom-right-radius: 5px;
 }
 
-table a,
+
 nav a {
   font-weight: bold;
   color: var(--v-gold);
+}
+
+table a{
+  font-weight: bold;
+  color:var(--contrast);
 }
 
 .burger-menu-active a {
@@ -244,6 +249,7 @@ nav a {
   color: var(--contrast);
 }
 
+table a:hover,
 .footer-menu a:hover,
 .follow a:hover,
 .legal a:hover {
