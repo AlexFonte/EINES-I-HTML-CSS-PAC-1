@@ -279,17 +279,10 @@ nav a {
   color: var(--white);
 }
 
-#view-viana {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  min-height: 65rem;
-  color: var(--white);
-}
-
+#view-viana,
 #view-viana-category-detail,
-#view-viana-category {
+#view-viana-category,
+#view-viana-presentacio {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -298,9 +291,15 @@ nav a {
   color: var(--white);
 }
 
+#view-viana {
+  min-height: 65rem;
+}
+
+
 #view-viana .background-image img,
 #view-viana-category-detail .background-image img,
-#view-viana-category .background-image img {
+#view-viana-category .background-image img,
+  #view-viana-presentacio .background-image img {
   width: 100%;
   height: 100%;
   object-position: top;
@@ -308,7 +307,7 @@ nav a {
   display: block;
   position: absolute;
   z-index: -1;
-  filter: brightness(0.6);
+  filter: brightness(0.55);
 }
 
 /* #view-viana-category {
@@ -316,8 +315,8 @@ nav a {
     url(../img/viana-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Alinea la imagen en la parte inferior */
- /* width: 100%;
+  background-position: center;
+  width: 100%;
   max-width: 100%;
   color: var(--white);
 } */
@@ -327,22 +326,22 @@ nav a {
     url(../img/santa-luzia-10-2190h-1.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Alinea la imagen en la parte inferior */
-  /*width: 100%;
+  background-position: center;
+  width: 100%;
   max-width: 100%;
   color: var(--white);
 } */
 
-#view-viana-presentacio {
+/* #view-viana-presentacio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../img/viana-av.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Alinea la imagen en la parte inferior */
+  background-position: center;
   width: 100%;
   max-width: 100%;
   color: var(--white);
-}
+} */
 
 #view-viana .flex {
   gap: 5rem;
