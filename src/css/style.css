@@ -12,6 +12,7 @@
   --v-red-90: rgba(237, 24, 70, 0.9);
   /* --box-sadow: 3px 3px 5px rgba(214, 183, 111, 0.9); */
   --box-sadow: 3px 3px 5px rgba(184, 154, 94, 0.9);
+  --contrast: #4a4a4a;
 }
 
 .arizonia {
@@ -208,7 +209,7 @@ nav a {
 /* ##################################### CSS FOOTER ################################### */
 
 .footer {
-  color: var(--v-gold);
+  color: var(--contrast);
   font-size: 1.4rem;
   font-weight: 500;
   display: flex;
@@ -240,9 +241,10 @@ nav a {
 .footer-menu a,
 .follow a,
 .legal a {
-  color: var(--v-gold);
+  color: var(--contrast);
 }
 
+.footer-menu a:hover,
 .follow a:hover,
 .legal a:hover {
   color: var(--v-red);
@@ -251,7 +253,7 @@ nav a {
 .follow svg {
   width: 2.5rem;
   height: 2.5rem;
-  fill: var(--v-gold);
+  fill: var(--contrast);
 }
 
 .follow svg:hover {
@@ -515,7 +517,7 @@ nav a {
   border: 2px solid var(--v-gold);
   background-color: var(--custom-white);
   max-width: 30rem;
-  background-color: #4a4a4a;
+  background-color: var(--contrast);
 }
 
 .card-category .img-card {
