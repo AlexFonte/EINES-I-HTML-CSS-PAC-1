@@ -4,7 +4,9 @@
 <head>
     <include src="common/head.html"></include>
     <!-- Add Scripts -->
-    <script type="module" src="js/app.js" defer></script>
+    <link rel="preload" href="../node_modules/sweetalert2/dist/sweetalert2.min.css" as="style" onload="this.rel='stylesheet'">
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js" type="module"></script>
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
