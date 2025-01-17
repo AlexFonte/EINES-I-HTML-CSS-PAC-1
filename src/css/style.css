@@ -844,10 +844,11 @@ thead th:nth-child(5) {
     display: inline-flex;
   }
 
-  .background-viana-hello-popup {
-    width: 100%;
+/*   .background-viana-hello-popup {
+    width: 20rem;
+    height: 25rem;
   }
-
+ */
   #view-viana {
     height: 50rem; /* Ajusta la altura para pantallas más pequeñas */
   }
@@ -995,9 +996,9 @@ thead th:nth-child(5) {
     height: auto;
   }
 
-  .background-viana-hello-popup {
-    width: 100%;
-  }
+ /*  .background-viana-hello-popup {
+  width: 40rem;
+  height: 50rem;  } */
 
   #view-viana .flex {
     gap: 11rem;
